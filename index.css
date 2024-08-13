@@ -1,0 +1,2031 @@
+body{
+  margin: 0;
+    background-color: rgb(0, 0, 0);
+    
+}
+
+#forIcon{
+    width:100%;
+    height: 60px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+ 
+    
+}
+#forIcon #forShopicon{
+   
+    
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    border-radius: 15px;
+    background-image:url(photo_2024-03-17_21-47-06.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#forIcon #forCaption{
+    width: 800px;
+    height: 50px;
+    margin: auto;
+    margin-left: 280px;
+    position: relative;
+}
+#forIcon #forCaption #p1{
+    color: white;
+     text-align: center;
+     font-size: large;font-style: bold;
+      
+                    
+}
+#forIcon #forCaption #p2{
+font-size: small;
+text-align: center;
+color: white;
+
+font-style: oblique;
+
+}
+#forIcon .fa-cart-shopping {
+    color: white;
+    position: relative;
+    font-size: x-large;
+    margin-top: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+
+}
+#forIcon .fa-bars{
+    color: rgb(255, 255, 255);
+   font-size: x-large;
+   position: relative;
+   margin-top: 10px;
+   margin-right: 15px;
+   cursor: pointer;
+
+}
+#forNotfication{
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    color: rgb(254, 43, 43);
+    background-color:rgb(254, 43, 43); 
+transform: translate(0px,-26px);
+display: none;
+}
+#forContainer{
+    width: 100%;
+background-image: url(playboy0.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+
+    height: 655px;
+    
+}
+
+
+#forNav{
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.219);
+    backdrop-filter: blur(4px);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-300px);
+    transition: 1s;
+}
+#forNav h3{
+    color: white;
+    text-align: center;
+    font-style: italic;
+    text-shadow: 1px 1px 2px black;
+}
+ #forNav #for-add-to-cart{
+    height: 400px;
+    width: 290px;
+overflow: scroll;
+    margin-left: 5px;
+ } 
+ .for-add-to-cards{
+    width: 260px;
+    height: 60px;
+  margin-top:10px;
+    display: flex;
+    border:1px black solid;
+    background-color:white;
+    flex-direction: row;
+    margin: auto;
+ }
+ .for-add-to-cards img{
+    width: 80px;
+    height: 60px;
+ }
+ .for-add-to-cards .forText{
+    width:200px;
+    height:30px;
+    font-style:bold;
+    font-size: small;
+ padding-left: 10px;
+    padding-top:10px;
+ }
+ .for-add-to-cards .forBtnNum{
+    width: 200px;
+    height: 30px;
+    float: right;
+    margin-top: 10px;
+ }
+ .for-add-to-cards .forBtnNum .numforbtn{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 10px;
+ }
+ .for-add-to-cards .forBtnNum .numforbtn .prevNbtn{
+    width: 20px;
+    height: 20px;
+    font-size: small;
+    text-align: center;
+    padding: 0;
+    border-radius: 50%;
+    cursor: pointer;
+ }
+ .for-add-to-cards .forBtnNum .numforbtn .nextNbtn{
+    width: 20px;
+    height: 20px;
+    font-size: small;
+    text-align: center;
+    padding: 0;
+    border-radius: 50%;
+    cursor: pointer;
+ }
+ .for-add-to-cards  .forCancel{
+float: right;
+top: 0;
+margin-top: 0;
+cursor: pointer;
+ }
+
+
+
+
+
+
+
+ #forNav #for-add-to-cart{
+    height: 400px;
+    width: 290px;
+overflow: scroll;
+    margin-left: 5px;
+ } 
+ .for-add-to-cards3{
+    width: 260px;
+    height: 60px;
+  margin-top:10px;
+    display: flex;
+    border:1px black solid;
+    background-color:white;
+    flex-direction: row;
+    margin: auto;
+ }
+ .for-add-to-cards3 img{
+    width: 80px;
+    height: 60px;
+ }
+ .for-add-to-cards3 .forText3{
+    width:200px;
+    height:30px;
+    font-style:bold;
+    font-size: small;
+ padding-left: 10px;
+    padding-top:10px;
+ }
+ .for-add-to-cards3 .forBtnNum3{
+    width: 200px;
+    height: 30px;
+    float: right;
+    margin-top: 10px;
+ }
+ .for-add-to-cards3 .forBtnNum3 .numforbtn3{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 10px;
+ }
+ .for-add-to-cards3 .forBtnNum3 .numforbtn3 .prevNbtn3{
+    width: 20px;
+    height: 20px;
+    font-size: small;
+    text-align: center;
+    padding: 0;
+    border-radius: 50%;
+    cursor: pointer;
+ }
+ .for-add-to-cards3 .forBtnNum3 .numforbtn3 .nextNbtn3{
+    width: 20px;
+    height: 20px;
+    font-size: small;
+    text-align: center;
+    padding: 0;
+    border-radius: 50%;
+    cursor: pointer;
+ }
+ .for-add-to-cards3  .forCancel3{
+float: right;
+top: 0;
+margin-top: 0;
+cursor: pointer;
+ }
+ #forNav #forCloseAndBuy{
+    width: 290px;
+    height: 50px;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+ }
+
+ #forNav #forCloseAndBuy #close{
+width: 140px;
+height: 50px;
+background-color: black;
+color: white;
+font-style: bold;
+border-radius: 10px;
+ }
+#forNav #forCloseAndBuy #buy{
+    width: 140px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    font-style: bold;
+border-radius: 10px;
+    }
+    
+ #forContainer #forNavbar{
+ position: absolute;
+    width: 150px;
+    height: auto;
+    background: rgba(0, 0, 0, 0.219);
+    backdrop-filter: blur(4px);
+    border-radius: 5px;
+
+   transform: translateX(1374px);
+    display: none;
+    
+    
+}
+#forContainer #forNavbar ol{
+padding-left: 5px;
+display: grid;
+gap: 15px;
+justify-content: space-around;
+text-align: center;
+list-style: none;
+
+
+}
+#forContainer #forNavbar ol #a1{
+font-size: small;
+margin: auto;
+color: white;
+padding-left: 2px;
+padding-top: 10px;
+}
+#forContainer #forNavbar ol #a2{
+    font-size: small;
+    margin: auto;
+    color: white;
+    padding-left: 2px;
+    padding-top: 30px;
+    }
+    #forContainer #forNavbar ol #a3{
+        font-size: small;
+        margin: auto;
+        color: white;
+        padding-top: 30px;
+        padding-left: 2px;
+        }
+#forContainer #forNavbar ol #i1{
+font-size: small;
+padding-left: 4px;
+color: rgb(255, 234, 0);
+}
+#forContainer #forNavbar ol #i2{
+font-size: small;
+padding-left: 4px;
+color: greenyellow;
+}
+#forContainer #forNavbar ol #i3{
+    font-size: small;
+    padding-left: 4px;
+    color: rgb(204, 166, 13);
+}
+
+
+#midCaption{
+    position: absolute;
+    width: 600px;
+   height: 300px;
+   margin: auto;
+   margin-top: 220px;
+   margin-left: 475px;
+ 
+   
+}
+#forideasConcept{
+    width:600px ;
+    height: 100px;
+    text-align: center;
+  
+    }
+#forideasConcept #h2s{
+
+font-style: italic;
+font-size: x-large;
+text-shadow: 0px 0px 3px black;
+    color:white;
+    text-align: center;
+}
+#forideasConcept #h2x{
+
+    font-style: italic;
+    font-size: large;
+    text-shadow: 0px 0px 3px black;
+        color:white;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+#forBtn{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    }
+#new{
+    font-size: large;
+    color: white;
+    border-radius: 5px;
+    box-sizing: 4px;
+    cursor: pointer;
+    width: 150px;
+    height: 30px;
+    border: rgb(0, 0, 0) solid 1px;
+    background:rgba(0, 0, 0, 0.219);
+    backdrop-filter: blur(3px);
+}
+#new:hover{
+    transform: scale(1.1);
+    transition: 1.5s;
+}
+#labelmid{
+    font-size: x-large; color: white;
+}
+#trend{
+    width: 150px;
+    height: 30px;
+    font-size: large;
+    border-radius: 5px;
+    box-sizing: 4px;
+    color: rgb(0, 0, 0);
+    border: rgb(0, 0, 0) solid 1px;
+
+    margin-left: 1px;
+    cursor: pointer;
+    background:rgba(255, 255, 255, 0.619);
+    backdrop-filter: blur(2px);
+}
+#trend:hover{
+    transform: scale(1.1);
+    transition: 1.5s;
+}
+
+
+
+#forcontainer2{
+    width: 100%;
+background-image: url(photo_2024-04-06_14-47-29.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+        height: 663px;
+        position: relative;   
+}
+#forHeader2{
+    width: 1536px;
+    height: 70px;
+    margin: 0;
+    padding: 0;
+}
+#forHeader2 .fa-chess-king{
+    color: white;
+    float: left;
+    margin-top: 10px;
+    margin-left: 2px;
+    font-style: italic;
+}
+#forHeader2 h3{
+    padding: 0%;
+    color: white;
+    padding-top: 5px;
+        position: absolute;
+        font-style: italic;
+}
+#forMain2{
+    width: 1536px;
+    height: 523px;
+    display: flex;
+    flex-direction: row;
+}
+#longWidth2{
+width: 896px;
+height: 483px;
+margin-top: 20px;
+margin-left: 20px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+}
+#longWidth2 #forinfo{
+    width: 840px;
+height: 300px;
+margin-left: 35px;
+margin-top: 30px;
+}
+
+#shortWidth2{
+    width: 560px;
+height: 483px;
+background-color: rgba(0, 0, 0, 0.219);
+backdrop-filter: blur(2px);
+margin-top: 20px;
+margin-left:20px;
+}
+#forSlide{
+    width:520px;
+    height:443px;
+    margin-left: 20px;
+    margin-top:20px;
+    position: relative;
+}
+#forSlide #forslider{
+    width: 500px;
+    height:300px;
+   margin-left: 10px;
+   position: relative;
+    transform: translateY(10px);
+}
+#forSlide #forslider .ForImgSlider{
+    width: 500px;
+    height: 300px;
+position: absolute;
+}
+ #fordescription{
+    width:500px;
+    height:50px;
+    transform: translateY(15px);
+    margin-left: 10PX ;
+    display: flex;
+    flex-direction: row;
+}
+#fordescription #prevbtn{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px rgb(255, 255, 255) solid;
+    color: white;background:rgba(68, 66, 66, 0.219);
+    backdrop-filter: blur(2px);
+    text-align: center;cursor: pointer;
+    transform: translate(70px,15px);
+}
+#fordescription #longbutt{
+    width: 300px;
+    height: 30px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#fordescription #longbutt .fa-chess-knight{
+    height: 18px;
+  color:white;
+  border: black;
+    margin-top: 10px;
+}
+#fordescription #nextbtn{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px rgb(255, 255, 255) solid;
+    color: white;background:rgba(68, 66, 66, 0.219);
+    backdrop-filter: blur(2px);
+    text-align: center;
+    cursor: pointer;
+transform: translate(-70px,15px);
+}
+#forfavbtn{
+    width:500px ;
+    height: 65px;
+    background-color:lightgray;
+    margin: auto;
+    margin-top: 20px;
+ display: flex;
+ flex-direction: row;
+ border-radius: 20px;
+}
+#for2btn2{
+    width: 220px;
+    height:45px ;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+#forfavbtn #forh2{
+    width: 150px;
+    height: 35px;
+    margin: auto;
+    text-align: center;
+}
+#forh2 .onlyinh2{
+    color:rgb(255, 255, 255);
+    text-shadow: 1px 2px 2px black;
+    transform: translate(0px,-10px);
+}
+ .purchase2{
+    width:100px ;
+    height: 35px;
+    background-color: black;
+    color: white;
+    padding: 0;
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+}
+ .add2cart2{
+    width:100px ;
+    height: 35px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 0;
+    text-align: center;
+  margin: auto;
+        font-weight: bold;
+}
+#forFooter2{
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.219);
+    backdrop-filter: blur(2px);
+}
+#forcontainer3{
+    width: 100%;
+background-image: url(photo_2024-04-08_21-19-18.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+        height: 663px;
+        position: relative;   
+}
+#forHeader3{
+    width: 1536px;
+    height: 70px;
+}
+#forHeader3 .fa-chess-queen{
+    color: white;
+    float: left;
+    margin-top: 10px;
+    margin-left: 2px;
+    font-style: italic;
+}
+#forHeader3 h3{
+    padding: 0%;
+    color: white;
+    padding-top: 5px;
+        position: absolute;
+        font-style: italic;
+}
+
+#forMain3{
+    width: 1536px;
+    height: 523px;
+    display: flex;
+    flex-direction: row;
+}
+#longWidth3{
+width: 896px;
+height: 483px;
+margin-top: 20px;
+margin-left: 20px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+#longWidth3 #forinfo3{
+    width: 840px;
+    height: 300px;
+    margin-left: 35px;
+    margin-top: 30px;
+}
+#shortWidth3{
+    width: 560px;
+height: 483px;
+background-color: rgba(0, 0, 0, 0.219);
+backdrop-filter: blur(2px);
+margin-top: 20px;
+margin-left:20px;
+}
+#forSlide3{
+    width:520px;
+    height:443px;
+    margin-left: 20px;
+    margin-top:20px;
+    position: relative;
+}
+#forSlide3 #forslider3{
+    width: 500px;
+    height:300px;
+   margin-left: 10px;
+   position: relative;
+    transform: translateY(10px);
+}
+#forSlide3 #forslider3 .ForImgSlider3{
+    width: 500px;
+    height: 300px;
+    position: absolute;
+}
+ #fordescription3{
+    width:500px;
+    height:50px;
+    transform: translateY(15px);
+    margin-left: 10PX ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#fordescription3 #prevbtn3{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px rgb(255, 255, 255) solid;
+    color: white;background:rgba(68, 66, 66, 0.219);
+    backdrop-filter: blur(2px);
+    text-align: center;cursor: pointer;
+    transform: translate(70px,15px);
+}
+#fordescription3 #nextbtn3{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px rgb(255, 255, 255) solid;
+    color: white;background:rgba(68, 66, 66, 0.219);
+    backdrop-filter: blur(2px);
+    text-align: center;
+    cursor: pointer;
+transform: translate(-70px,15px);
+}
+#fordescription3 #longbutt3{
+    width: 300px;
+    height: 30px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#fordescription3 #longbutt3 .fa-chess-bishop{
+    width: 15px;
+    height: 20px;
+  color:white;
+  border: black;
+    margin-top: 10px;
+}
+
+#forfavbtn3{
+    width:500px ;
+    height: 65px;
+    background-color:lightgray;
+    margin: auto;
+    margin-top: 20px;
+ display: flex;
+ flex-direction: row;
+ border-radius: 20px;
+}
+#forfavbtn3 #forh3{
+    width: 150px;
+    height: 35px;
+    margin: auto;
+    text-align: center;
+}
+#forfavbtn3 #forh3 .onlyinh3{
+    color:rgb(255, 255, 255);
+    text-shadow: 1px 2px 2px black;
+    transform: translate(0px,-10px);
+}
+#forfavbtn3 #for2btn3{
+    width: 220px;
+    height:45px ;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+#forfavbtn3 .purchase3{
+    width:100px ;
+    height: 35px;
+    background-color: black;
+    color: white;
+    padding: 0;
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+}
+#forfavbtn3 .add2cart3{
+    width:100px ;
+    height: 35px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 0;
+    text-align: center;
+  margin: auto;
+    font-weight: bold;
+}
+#forFooter3{
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.219);
+    backdrop-filter: blur(2px);}
+.footer{
+    width: 100%;
+    height: 270px;
+    background-color: rgb(0, 0, 0);
+    margin: auto;
+box-sizing: border-box;
+padding-top: 1px;
+}
+.footer .footerbox{
+    width: 1150px;
+    height: 270px;
+    background-color: rgb(255, 0, 247);
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.footer .footerbox .sbox1{
+    width: 310px;
+    height: 270px;
+    background-color: black;
+    margin: auto;
+}
+.footer .footerbox .sbox1 #goForimg{
+     width: 200px;
+    height: 55px;
+    margin: auto;
+    margin-left: 3px;
+  border-radius: 2px;
+    background-image: url(photo_2024-03-17_21-47-06.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+.footer .footerbox .sbox1 #h5a{
+    color: white;
+}
+.footer .footerbox .sbox1 #h5a span{
+    color:yellow;
+}
+.footer .footerbox .sbox1 .h5a{
+    color: white;
+    text-transform: uppercase;
+}
+.footer .footerbox .sbox1 .h5a a {
+    color: white;
+}
+.footer .footerbox .bbox1{
+    width: 530px;
+    height: 270px;
+    background-color: black;
+}
+.footer .footerbox .bbox1 .h5B{
+    color: white;
+}
+.footer .footerbox .bbox1 .h5b{
+    color: white;
+}
+.footer .footerbox .sbox2{
+    width: 310px;
+    height: 270px;
+    background-color: black;
+}
+.footer .footerbox .sbox2 .h5c{
+    color: white;
+}
+.footer .footerbox .sbox2 #forallicon{
+    width: 190px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: white;
+border-radius: 15px; 
+}.footer .footerbox .sbox2 #forallicon #facebook{
+    font-size: xx-large;
+    color: rgb(16, 16, 255)
+    ;margin-top: 4px;
+}
+.footer .footerbox .sbox2 #forallicon #inst{
+    font-size: xx-large;
+    color:rgb(240, 13, 225);
+    margin-top: 4px;
+}
+.footer .footerbox .sbox2 #forallicon #telegram{
+    font-size: xx-large;
+    color: rgb(106, 213, 252)
+    ;margin-top: 4px;
+}
+.footer .footerbox .sbox2 #forallicon #x{
+    font-size: xx-large;
+    color:rgb(0, 0, 0)
+    ;margin-top: 4px;
+}
+
+
+@media screen and (max-width: 576px) {
+    #forIcon {
+        width: 100%;
+        height: 50px;
+        margin: auto;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        padding: 3px;
+        justify-content: space-between;
+    }
+
+    #forShopicon {
+        margin-top: 5px;
+        margin-left: 5px;
+        width: calc(100%);
+        height: 40px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        background-image: url(photo_2024-03-17_21-47-06.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #forCaption {
+       width: calc(100%-120px);
+        /* Adjusted for remaining space */
+        height: 50px;
+         /* Added margin for spacing */
+      background-color: rgb(0, 0, 0);
+        position: relative;
+        transform: translate(-130px);
+        text-align: center; /* Centering the text */
+    }
+
+    #forCaption #p1 {
+        color: rgb(255, 255, 255);
+        font-size: medium;
+        font-style: bold; /* Changed from font-style to font-weight */
+        margin-bottom: 5px;
+        position: absolute;
+         left: 50%;
+        transform: translateX(-60%);
+        top: 30%;
+        margin-top: 0px; /* Adjusted for vertical centering */
+    }
+
+    #forCaption #p2 {
+        font-size:xx-small;
+        color: white;
+        margin-bottom: 5px;
+        font-style: oblique;
+        position: absolute;
+left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        display: none;
+    }
+
+    .fa-cart-shopping {
+        color: white;
+        font-size: large;
+        cursor: pointer;
+        margin-top: 15px; /* Added margin for spacing */
+        margin-right: 20px; /* Adjusted for spacing */
+    }
+
+    .fa-bars {
+        color: rgb(255, 255, 255);
+        font-size: large;
+        cursor: pointer;
+        margin-top: -5px; /* Added margin for spacing */
+        margin-right: 0px; /* Adjusted for spacing */
+    }
+    #forNotfication{
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        color: rgb(254, 43, 43);
+        background-color:rgb(254, 43, 43); 
+    transform: translate(15px,-22px);
+    display: none;
+    }
+    #forContainer{
+        width: 101.3%;
+    background-image: url(playboy0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+        height:240px;
+        position: relative;
+       
+    }
+    #forNav{
+        position: absolute;
+        width: 150px;
+        height: 230px;
+        background: rgba(0, 0, 0, 0.219);
+        backdrop-filter: blur(4px);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        transform: translateX(-300px);
+        transition: 1s;
+    }
+    #forNav h3{
+        color: white;
+        text-align: center;
+        font-style: italic;
+        font-size: x-small;
+        text-shadow: 1px 1px 2px black;}
+ #forNav #for-add-to-cart{
+            height: 230px;
+            background-color: aquamarine;
+            width: 150px;
+       overflow: scroll;
+            margin-left: 5px;
+         } 
+         #forNav #for-add-to-cart .for-add-to-cards{
+            width: 150px;
+            height: 40px;
+          margin-top:10px;
+            display: flex;
+            border:1px black solid;
+            background-color:white;
+            flex-direction: row;
+            margin: auto;
+         }
+         .for-add-to-cards img{
+            width: 41px;
+            height: 41px;
+         }
+         .for-add-to-cards .forText{
+            width:100px;
+            height:20px;
+            background-color: blue;
+            font-style:bold;
+            font-size: xx-small;
+         margin: 0%;
+         left: 0;
+         }
+         .for-add-to-cards .forBtnNum{
+            width: 50px;
+            height: 20px;
+            float: right;
+         
+            background-color: blueviolet;
+            font-size: xx-small;
+         }
+         .for-add-to-cards .forBtnNum .numforbtn{
+            width: 50px;
+            height: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            background-color: rgb(255, 127, 127);
+            top: 0;
+            
+         }
+         .for-add-to-cards .forBtnNum .numforbtn .prevNbtn{
+            width: 15px;
+            height: 15px;
+            font-size: xx-small;
+            text-align: center;
+            padding: 0;
+            border-radius: 50%;
+            cursor: pointer;
+         }
+         .for-add-to-cards .forBtnNum .numforbtn .nextNbtn{
+            width: 15px;
+            height: 15px;
+            font-size: x-small;
+            text-align: center;
+            padding: 0;
+            border-radius: 50%;
+            cursor: pointer;
+         }
+         .for-add-to-cards  .forCancel{
+        
+        top: 0;
+        margin-top: 0;
+        cursor: pointer;
+        font-size: x-small;
+         }
+     #forNav #forCloseAndBuy{
+        width: 170px;
+        height:25px;
+        margin-left: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+     }
+    
+     #forNav #forCloseAndBuy #close{
+    width: 90px;
+    height: 25px;
+    background-color: black;
+    color: white;
+    font-style: bold;
+    border-radius: 10px;
+margin-right: 5px;
+     }
+    #forNav #forCloseAndBuy #buy{
+        width: 90px;
+        height: 25px;
+        background-color: rgb(255, 255, 255);
+        font-style: bold;
+    border-radius: 10px;
+    margin-left: 4px;
+        }
+        
+    #forContainer  #forNavbar{
+
+        width: 110px;
+        height: auto;
+        background: rgba(0, 0, 0, 0.219);
+        backdrop-filter: blur(4px);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+       display: none;
+       transform: translate(0);
+       right: 0;
+
+    }
+
+       #forContainer #forNavbar ol{
+       padding-left: 5px;
+       display: grid;
+       gap: 7px;
+       justify-content: space-around;
+       
+       list-style: none;
+       
+       
+       }
+       #forContainer #forNavbar ol #a1{
+       font-size: xx-small;
+       margin: auto;
+       color: white;
+       padding-left: 2px;
+       padding-top: 10px;
+       }
+       #forContainer #forNavbar ol #a2{
+           font-size: xx-small;
+      padding-left: 0;
+           color: white;
+           padding-left: 2px;
+           padding-top: 30px;
+           }
+           #forContainer #forNavbar ol #a3{
+               font-size: xx-small;
+               margin: auto;
+               color: white;
+               padding-top: 30px;
+               padding-left: 2px;
+               }
+       #forContainer #forNavbar ol #i1{
+       font-size: x-small;
+       padding-left: 4px;
+       color: rgb(255, 234, 0);
+       }
+       #forContainer #forNavbar ol #i2{
+       font-size: x-small;
+       padding-left: 4px;
+       color: greenyellow;
+       }
+       #forContainer #forNavbar ol #i3{
+           font-size: x-small;
+           padding-left: 4px;
+           color: rgb(204, 166, 13);
+       }
+    #midCaption {
+        width: 90%; /* Adjust width for smaller screens */
+        height: 60%; /* Allow height to adjust based on content */
+        margin: 20px ; /* Center the element with some margin */
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: auto;
+    }
+
+    #forideasConcept {
+        width: 90%; /* Adjust width for smaller screens */
+        height: 50px; /* Allow height to adjust based on content */
+        text-align: center;
+       
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+
+
+    }
+    #forideasConcept #h2s{
+position: relative;
+        font-size: x-small;
+        color:white;
+        text-align: center;
+        font-style: italic;
+    }
+    #forideasConcept #h2x{
+        position: relative;
+        font-size: xx-small;
+            color:white;
+            text-align: center;
+    transform: translateY(-15px);
+    font-style: italic;
+     
+        }
+        #forBtn{
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            }
+            #forBtn #new{
+            font-size: x-small;
+            color: white;
+            width: 90px;
+            height: 20px;
+            cursor: pointer;
+        
+         
+        }
+        #new:hover{
+            transform: scale(1.1);
+            transition: 1.5s;
+        }
+        #forBtn #trend{ 
+            position: relative;
+            font-size: x-small;
+            border: none;
+            
+      width: 90px;
+      height: 20px;
+            margin-left: 1px;
+            cursor: pointer;
+         
+        }
+        #trend:hover{
+            transform: scale(1.1);
+            transition: 1.5s;
+        }
+        #labelmid{
+            font-size:medium;    
+        }
+
+#forcontainer2{
+    width: 100%;
+background-image: url(photo_2024-04-06_14-47-29.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+        height: 400px;
+        position: relative;   
+        }
+        #forHeader2{
+            width:100%;
+            height: 30px;
+  
+            margin: 0%;
+            padding: 0%;
+            position: relative;
+        }
+        #forHeader2 .fa-chess-king{
+            color: white;
+       
+           float: left;
+           margin-bottom: 2px;
+            margin-left: 2px;
+            font-style: italic;
+            font-size: x-small;
+         
+        }
+        #forHeader2 h3{
+          
+            color: white;
+  
+     padding: 0%;
+                float: left;
+                margin-top: 20px;
+                font-style: italic;
+                font-size: x-small;
+        }
+        #forMain2{
+            width: 100%;
+            height: 350px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+           
+        }
+        #longWidth2{
+            width: 40%;
+            height: 340px;
+            margin-top: 5px;
+            margin-left: 5px;
+            
+        
+            
+            }
+            #longWidth2 #forinfo{
+                width:100%;
+            height: 340px;
+        margin: auto;
+        
+            font-size:medium;
+            overflow: scroll;
+            }
+            
+            #shortWidth2{
+                width: 60%;
+            height: 300px;
+            margin: auto;
+            margin-top: 30px;
+           
+           position: relative;
+            }
+            #forSlide{
+                width:90%;
+                height:300px;
+            margin: auto;
+            margin-left: 5px;
+                position: relative;
+            }
+            #forSlide #forslider{
+                width: 100%;
+                height:300px;
+               position: relative;
+                
+            }
+            #forSlide #forslider .ForImgSlider{
+                width: 100%;
+                height: 60%;
+            position: absolute;
+            }
+            #fordescription{
+                width:100%;
+                height:35px;
+                position: relative;
+                margin-left: 10px;
+                transform: translate(0px,-110px);
+                display: flex;
+                flex-direction: row;
+                
+            }
+            #fordescription #prevbtn{
+                width: 22px;
+                height: 22px;
+                border-radius: 50%;
+                border: 2px rgb(255, 255, 255) solid;
+                color: white;
+                background:rgba(68, 66, 66, 0.219);
+                backdrop-filter: blur(2px);
+                text-align: center;
+                font-size: small;
+                padding: 0;
+                cursor: pointer;
+                transform: translate(0px);
+                margin-top: 10px;
+                margin-left: 15px;
+            }
+            #fordescription #longbutt{
+                width: 200px;
+                height: 25px;
+                margin: auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+            #fordescription #longbutt .fa-chess-knight{
+                height: 15px;
+                font-size: 13px;
+              color:white;
+              border: black;
+              padding: 0;
+            }
+            #fordescription #nextbtn{
+                width: 22px;
+                height: 22px;
+                border-radius: 50%;
+                border: 2px rgb(255, 255, 255) solid;
+                color: white;
+                background:rgba(68, 66, 66, 0.219);
+                backdrop-filter: blur(2px);
+                text-align: center;
+                cursor: pointer;
+            transform: translate(0px);
+            margin-top: 10px;
+            margin-right: 15px;
+
+    }
+    #forfavbtn{
+        width:100%;
+        height: 40px;
+        background-color:lightgray;
+        margin: auto;
+        transform: translate(10px,-100px);
+     display: flex;
+     flex-direction: row;
+     border-radius: 10px;
+    }
+  
+    #forfavbtn #forh2{
+        width: 35%;
+        height: 35px;
+        margin: auto;
+        padding-top: 5px;
+        text-align: center;
+        font-size: small;
+    }
+    #forh2 .onlyinh2{
+        color:rgb(255, 255, 255);
+        text-shadow: 1px 2px 2px black;
+        transform: translate(0px,-10px);
+    }
+    #for2btn2{
+        width: 65%;
+        height:40px ;
+        
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+     .purchase2{
+        width:45% ;
+        height: 30px;
+        background-color: black;
+        color: white;
+        padding: 0;
+        text-align: center;
+        margin: auto;
+        font-size: x-small;
+        font-weight: bold;
+    }
+     .add2cart2{
+        width:45% ;
+        height: 30px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        padding: 0;
+        text-align: center;
+      margin: auto;
+            font-weight: bold;
+            font-size: x-small;
+
+
+}
+#forFooter2{
+    width:100%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.219);
+    backdrop-filter: blur(2px);
+}
+#forcontainer3{
+    width: 100%;
+background-image: url(photo_2024-04-08_21-19-18.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+        height: 400px;
+        position: relative;   
+        }
+        #forHeader3{
+            width:100%;
+            height: 30px;
+  
+            margin: 0%;
+            padding: 0%;
+            position: relative;
+        }
+        #forHeader3 .fa-chess-queen{
+            color: white;
+           float: left;
+           margin-bottom: 2px;
+            margin-left: 2px;
+            font-style: italic;
+            font-size: x-small;
+         
+        }
+        #forHeader3 h3{
+            color: white;
+  
+     padding: 0%;
+                float: left;
+                margin-top: 20px;
+                font-style: italic;
+                font-size: x-small;
+        }
+        #forMain3{
+            width: 100%;
+            height: 350px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+           
+        }
+        #longWidth3{
+            width: 40%;
+            height: 340px;
+            margin-top: 5px;
+            margin-left: 5px;
+            
+        
+            
+            }
+            #longWidth3 #forinfo3{
+                width:100%;
+            height: 340px;
+        margin: auto;
+        
+            font-size:medium;
+            overflow: scroll;
+            }
+            
+             #shortWidth3{
+                width: 60%;
+            height: 300px;
+            margin: auto;
+            margin-top: 30px;
+        
+           
+           position: relative;
+            }
+            #forSlide3{
+                width:90%;
+                height:300px;
+            margin: auto;
+            margin-left: 5px;
+                position: relative;
+            }
+            #forSlide3 #forslider3{
+                width: 100%;
+                height:300px;
+               position: relative;
+                
+            }
+            #forSlide3 #forslider3 .ForImgSlider3{
+                width: 100%;
+                height: 60%;
+            position: absolute;
+            }
+            #fordescription3{
+                width:100%;
+                height:35px;
+                position: relative;
+                margin-left: 10px;
+                transform: translate(0px,-110px);
+                display: flex;
+                flex-direction: row;
+                
+            }
+            #fordescription3 #prevbtn3{
+                width: 22px;
+                height: 22px;
+                border-radius: 50%;
+                border: 2px rgb(255, 255, 255) solid;
+                color: white;
+                background:rgba(68, 66, 66, 0.219);
+                backdrop-filter: blur(2px);
+                text-align: center;
+                font-size: small;
+                padding: 0;
+                cursor: pointer;
+                transform: translate(0px);
+                margin-top: 10px;
+                margin-left: 15px;
+            }
+            #fordescription3 #longbutt3{
+                width: 200px;
+                height: 25px;
+                margin: auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+            #fordescription3 #longbutt3 .fa-chess-bishop{
+                height: 15px;
+                font-size: 13px;
+              color:white;
+              border: black;
+              padding: 0;
+            }
+            #fordescription3 #nextbtn3{
+                width: 22px;
+                height: 22px;
+                border-radius: 50%;
+                border: 2px rgb(255, 255, 255) solid;
+                color: white;
+                background:rgba(68, 66, 66, 0.219);
+                backdrop-filter: blur(2px);
+                text-align: center;
+                cursor: pointer;
+            transform: translate(0px);
+            margin-top: 10px;
+            margin-right: 15px;
+
+    }
+    #forfavbtn3{
+        width:100%;
+        height: 40px;
+        background-color:lightgray;
+        margin: auto;
+        transform: translate(10px,-100px);
+     display: flex;
+     flex-direction: row;
+     border-radius: 10px;
+    }
+  
+    #forfavbtn3 #forh3{
+        width: 35%;
+        height: 35px;
+        margin: auto;
+        padding-top: 5px;
+        text-align: center;
+        font-size: small;
+    }
+    #forh3 .onlyinh3{
+        color:rgb(255, 255, 255);
+        text-shadow: 1px 2px 2px black;
+        transform: translate(0px,-10px);
+    }
+    #forfavbtn3  #for2btn3{
+        width: 65%;
+        height:40px ;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #forfavbtn3  #for2btn3   .purchase3{
+        width:45% ;
+        height: 30px;
+        background-color: black;
+        color: white;
+        padding: 0;
+        text-align: center;
+        margin: auto;
+        font-size: x-small;
+        font-weight: bold;
+    }
+    #forfavbtn3  #for2btn3   .add2cart3{
+        width:45% ;
+        height: 30px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        padding: 0;
+        text-align: center;
+      margin: auto;
+            font-weight: bold;
+            font-size: x-small;
+
+
+}
+#forFooter3{
+    width:100%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.219);
+    backdrop-filter: blur(2px);
+}
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+    margin: auto;
+box-sizing: border-box;
+padding-top: 1px;
+}
+.footer .footerbox{
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 0, 247);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.footer .footerbox .sbox1{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    margin: auto;
+}
+.footer .footerbox .sbox1 #goForimg{
+     width: 100px;
+    height: 30px;
+    margin: auto;
+  border-radius: 2px;
+    background-image: url(photo_2024-03-17_21-47-06.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+.footer .footerbox .sbox1 #h5a{
+    color: white;
+    text-align: center;
+    font-size: medium;
+}
+.footer .footerbox .sbox1 #h5a span{
+    color:yellow;
+}
+.footer .footerbox .sbox1 .h5a{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size:x-small;
+}
+.footer .footerbox .sbox1 .h5a a{
+    color: white;
+    font-size: x-small;
+}
+.footer .footerbox .bbox1{
+    width: 100%;
+    height:auto;
+    background-color: black;
+}
+.footer .footerbox .bbox1 .h5B{
+    color: white;
+    text-align: center;
+    font-size: medium;
+    
+}
+.footer .footerbox .bbox1 .h5b{
+    color: white;
+    text-align: center;
+    font-size: small;
+    padding-left: 73px;
+    padding-right:73px;
+}
+.footer .footerbox .sbox2{
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+.footer .footerbox .sbox2 .h5c{
+    color: white;
+    text-align: center;
+    font-size: medium;
+}
+.footer .footerbox .sbox2 #forallicon{
+    width: 150px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: white;
+    margin: auto;
+border-radius: 15px; 
+}
+.footer .footerbox .sbox2 #forallicon #facebook{
+    font-size: x-large;
+    color: rgb(16, 16, 255)
+    ;margin-top: 4px;
+}
+.footer .footerbox .sbox2 #forallicon #inst{
+    font-size: x-large;
+    color:rgb(240, 13, 225);
+    margin-top: 4px;
+}
+.footer .footerbox .sbox2 #forallicon #telegram{
+    font-size: x-large;
+    color: rgb(106, 213, 252)
+    ;margin-top: 4px;
+}
+.footer .footerbox .sbox2 #forallicon #x{
+    font-size: x-large;
+    color:rgb(0, 0, 0)
+    ;margin-top: 4px;
+}
+
+}
+   
+
+@media (min-width: 576px) and (max-width: 767.98px){ 
+    #forIcon {
+        width: 100%;
+        height: 50px;
+        margin: auto;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        padding: 3px;
+        justify-content: space-between;
+    }
+
+    #forShopicon {
+        margin-top: 5px;
+        margin-left: 5px;
+        width: 50%;
+        height: 40px;
+        background-color: white;
+        border-radius: 10px;
+        background-image: url(photo_2024-03-17_21-47-06.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #forCaption {
+       width: calc(100%-100px);
+  
+        /* Adjusted for remaining space */
+        height: 50px;
+         /* Added margin for spacing */
+      background-color: rgb(0, 0, 0);
+        position: relative;
+        transform: translate(-150px);
+        text-align: center; /* Centering the text */
+    }
+
+    #forCaption #p1 {
+        color: rgb(119, 228, 24);
+        font-size: large;
+        font-style: bold; /* Changed from font-style to font-weight */
+        margin-bottom: 5px;
+        position: absolute;
+         left: 50%;
+        transform: translateX(-50%);
+        top: 30%;
+        margin-top: 0px; /* Adjusted for vertical centering */
+    }
+
+    #forCaption #p2 {
+        font-size:xx-small;
+        color: white;
+        margin-bottom: 5px;
+        font-style: oblique;
+        position: absolute;
+left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        display: none;
+    }
+
+    .fa-cart-shopping {
+        color: white;
+        font-size: x-large;
+        cursor: pointer;
+        margin-top: 15px; /* Added margin for spacing */
+        margin-right: 20px; /* Adjusted for spacing */
+    }
+
+    .fa-bars {
+        color: rgb(255, 255, 255);
+        font-size: x-large;
+        cursor: pointer;
+        margin-top: -5px; /* Added margin for spacing */
+        margin-right: 0px; /* Adjusted for spacing */
+    }
+
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #forIcon {
+        width: 100%;
+        height: 50px;
+        margin: auto;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        padding: 3px;
+        justify-content: space-between;
+    }
+
+    #forShopicon {
+        margin-top: 5px;
+        margin-left: 5px;
+ width: calc(25%);
+        height: 40px;
+        background-color: white;
+        border-radius: 10px;
+        background-image: url(photo_2024-03-17_21-47-06.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #forCaption {
+       width: calc(100%-120px);
+        /* Adjusted for remaining space */
+        height: 50px;
+         /* Added margin for spacing */
+      background-color: rgb(0, 0, 0);
+        position: relative;
+        transform: translate(-150px);
+        text-align: center; /* Centering the text */
+    }
+
+    #forCaption #p1 {
+        color: rgb(0, 13, 200);
+        font-size: large;
+        font-style: bold; /* Changed from font-style to font-weight */
+        margin-bottom: 5px;
+        position: absolute;
+         left: 50%;
+        transform: translateX(-50%);
+        top: 30%;
+        margin-top: 0px; /* Adjusted for vertical centering */
+    }
+
+    #forCaption #p2 {
+        font-size:x-small;
+        color: white;
+        margin-bottom: 5px;
+        font-style: oblique;
+        position: absolute;
+left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        display: none;
+  
+    }
+
+    .fa-cart-shopping {
+        color: white;
+        font-size: x-large;
+        cursor: pointer;
+        margin-top: 15px; /* Added margin for spacing */
+        margin-right: 20px; /* Adjusted for spacing */
+    }
+
+    .fa-bars {
+        color: rgb(255, 255, 255);
+        font-size: x-large;
+        cursor: pointer;
+        margin-top: -5px; /* Added margin for spacing */
+        margin-right: 0px; /* Adjusted for spacing */
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+    #forIcon {
+        width: 100%;
+        height: 50px;
+        margin: auto;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        padding: 3px;
+        justify-content: space-between;
+    }
+
+    #forShopicon {
+        margin-top: 5px;
+        margin-left: 5px;
+        width: calc(100%-9.8%);
+        height: 40px;
+        background-color: white;
+        border-radius: 10px;
+        background-image: url(photo_2024-03-17_21-47-06.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #forCaption {
+       width: calc(100%-120px);
+        /* Adjusted for remaining space */
+        height: 50px;
+         /* Added margin for spacing */
+      background-color: rgb(0, 0, 0);
+        position: relative;
+        transform: translate(-130px);
+        text-align: center; /* Centering the text */
+    }
+
+    #forCaption #p1 {
+        color: rgb(221, 240, 10);
+        font-size: large;
+        font-style: bold; /* Changed from font-style to font-weight */
+        margin-bottom: 5px;
+        position: absolute;
+         left: 50%;
+        transform: translateX(-50%);
+        top: 10%;
+        margin-top: 0px; /* Adjusted for vertical centering */
+    }
+
+    #forCaption #p2 {
+        font-size:x-small;
+        color: white;
+        margin-bottom: 10px;
+        font-style: oblique;
+        position: absolute;
+left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+  
+    }
+
+    .fa-cart-shopping {
+        color: white;
+        font-size: x-large;
+        cursor: pointer;
+        margin-top: 15px; /* Added margin for spacing */
+        margin-right: 20px; /* Adjusted for spacing */
+    }
+
+    .fa-bars {
+        color: rgb(255, 255, 255);
+        font-size: x-large;
+        cursor: pointer;
+        margin-top: -5px; /* Added margin for spacing */
+        margin-right: 0px; /* Adjusted for spacing */
+    }
+}
+@media (min-width: 1200px) and (max-width:1660.8px){
+	#forIcon {
+        width: 100%;
+        height: 50px;
+        margin: auto;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        padding: 3px;
+        justify-content: space-between;
+    }
+
+    #forShopicon {
+        margin-top: 5px;
+        margin-left: 5px;
+        width: calc(100%-9.8%);
+        height: 40px;
+        background-color: rgb(234, 101, 29);
+        border-radius: 10px;
+        background-image: url(photo_2024-03-17_21-47-06.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #forCaption {
+       width: calc(100%-120px);
+        /* Adjusted for remaining space */
+        height: 50px;
+         /* Added margin for spacing */
+      background-color: rgb(0, 0, 0);
+        position: relative;
+        transform: translate(-70px);
+        text-align: center; /* Centering the text */
+    }
+
+    #forCaption #p1 {
+        color: rgb(255, 255, 255);
+        font-size: large;
+        font-style: bold; /* Changed from font-style to font-weight */
+        margin-bottom: 5px;
+        position: absolute;
+         left: 50%;
+        transform: translateX(-50%);
+        top: 10%;
+        margin-top: 0px; /* Adjusted for vertical centering */
+    }
+
+    #forCaption #p2 {
+        font-size:x-small;
+        color: rgb(255, 255, 255);
+        margin-bottom: 10px;
+        font-style: oblique;
+        position: absolute;
+left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+  
+    }
+
+    .fa-cart-shopping {
+        color: white;
+        font-size: x-large;
+        cursor: pointer;
+        margin-top: 15px; /* Added margin for spacing */
+        margin-right: 20px; /* Adjusted for spacing */
+    }
+
+    .fa-bars {
+        color: rgb(255, 255, 255);
+        font-size: x-large;
+        cursor: pointer;
+        margin-top: -5px; /* Added margin for spacing */
+        margin-right: 0px; /* Adjusted for spacing */
+    }
+}
+
+
+
