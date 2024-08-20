@@ -1,86 +1,85 @@
 body{
-  margin: 0;
-    background-color: rgb(0, 0, 0);
-    
+    margin:0%;
+    background-color: black;
+  
 }
-
-#forIcon{
+.forIcon{
     width:100%;
     height: 60px;
     background-color: rgb(0, 0, 0);
     display: flex;
-    flex-direction: row;
- 
-    
-}
-#forIcon #forShopicon{
-   
-    
+    flex-direction: row;  
+    position: relative;
+  }
+  .forIcon .forShopicon{
     width: 150px;
-    height: 40px;
+    height: 60px;
     background-color: white;
     border-radius: 15px;
-    background-image:url(photo_2024-03-17_21-47-06.jpg);
+    background-image:url(logo1.png);
     background-size: cover;
     background-position: center;
-}
-#forIcon #forCaption{
-    width: 800px;
-    height: 50px;
+    border: 1px solid black;
+  }
+  .forIcon .forCaption{
+    width: auto;
+    height: auto;
     margin: auto;
-    margin-left: 280px;
     position: relative;
-}
-#forIcon #forCaption #p1{
+  }
+  .forIcon .forCaption .p1{
     color: white;
      text-align: center;
-     font-size: large;font-style: bold;
+     font-size: large;
+     font-style: bold;
       
                     
-}
-#forIcon #forCaption #p2{
-font-size: small;
-text-align: center;
-color: white;
-
-font-style: oblique;
-
-}
-#forIcon .fa-cart-shopping {
+  }
+  .forIcon .forCaption .p2{
+  font-size: small;
+  text-align: center;
+  color: white;
+  
+  font-style: oblique;
+  
+  }
+  .forIcon .fa-cart-shopping {
     color: white;
     position: relative;
     font-size: x-large;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-right: 20px;
     cursor: pointer;
-
-}
-#forIcon .fa-bars{
+  
+  }
+  .forIcon .fa-bars{
     color: rgb(255, 255, 255);
    font-size: x-large;
    position: relative;
-   margin-top: 10px;
+   margin-top: 20px;
    margin-right: 15px;
    cursor: pointer;
-
-}
-#forNotfication{
+  
+  }
+  .forNotfication{
     width: 11px;
     height: 11px;
     border-radius: 50%;
     color: rgb(254, 43, 43);
     background-color:rgb(254, 43, 43); 
-transform: translate(0px,-26px);
-display: none;
-}
+  transform: translate(0px,-26px);
+  display: none;
+  }
+  
 #forContainer{
     width: 100%;
 background-image: url(playboy0.jpg);
 background-repeat: no-repeat;
 background-size: cover;
-
-    height: 655px;
-    
+background-position: center;
+margin: 0;
+padding: 0%;
+height: 550px;
 }
 
 
@@ -403,7 +402,140 @@ text-shadow: 0px 0px 3px black;
     transform: scale(1.1);
     transition: 1.5s;
 }
+.ContainNav{
+    width: 100%;
+    height: auto;
+    position: sticky;
+  top: 10px;
+  
+  }
+  .ContainNav .NavOl{
+    width:100%;
+    display: flex;
+    list-style: none;
+    margin: auto;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+  }
+  .ContainNav .NavOl a {
+    margin: 4px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  .ContainNav .NavOl a .fa-fire{
+    color: #ea5104;
+   
+  }
+  .ContainNav .NavOl a .fa-plus{
+    color: rgb(119, 188, 14)
+   
+  }
+  .ContainNav .NavOl a .fa-house{
+    color: #ffffff;
+   
+  }
+  .ContainNav .NavOl a .fa-arrow-trend-up{
+    color: #474bc9;
+   
+  }
+  
+  
+  
+  
+  #ExContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0%;
+  padding: 0%;
+  }
+  #ExContainer .con1{
+  width:100%;
+  height: auto;
+  background-color: rgb(0, 0, 0);
+  
+  }
+  #ExContainer .con2{
+    width:100%;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+    display: none;
+  
+  }
+  #ExContainer .con3{
+    width:100%;
+  height: auto;
+    background-color: rgb(0, 0, 0);
+    display: none;
+  }
+  #ExContainer .con4{
+    width:100%;
+    height: auto;
+  background-color: rgb(0, 0, 0);
+  display: none;
+  }
+   #fbox{
+    width: 100%;
+    height: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        flex-wrap: wrap;
 
+        
+    }
+     #fbox .ffbox{
+    width: 195px;
+    height: 270px;
+    background-color: rgb(224, 195, 157);
+    border-radius: 20px;
+    margin-top: 5px;
+    border: 1px black solid;
+    margin-left: 25px;
+   
+  }
+   #fbox .ffbox .forImage{
+    width: 100%;
+    height: 60%;
+    border-radius: 20px;
+  }
+   #fbox .ffbox .altImage{
+  width: 100%;
+  height: 7%;
+  text-align: center;
+  padding: 0%;
+  margin-top: 0%;
+  font-weight: bold;
+  }
+   #fbox .ffbox .infoImage{
+    width: 100%;
+  height: 18%;
+  text-align: center;
+  font-size: small;
+  padding-top: 4px;
+  overflow: visible;
+  }
+   #fbox .ffbox .btnImage{
+    width: 100%;
+    height: 12%;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #fbox .ffbox .btnImage .price{
+    padding-top: 8px;
+  }
+  #fbox .ffbox .btnImage .btnCart{
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
 
 
 #forcontainer2{
@@ -415,7 +547,7 @@ background-size: cover;
         position: relative;   
 }
 #forHeader2{
-    width: 1536px;
+    width: 100%;
     height: 70px;
     margin: 0;
     padding: 0;
@@ -435,13 +567,13 @@ background-size: cover;
         font-style: italic;
 }
 #forMain2{
-    width: 1536px;
+    width: 100%;
     height: 523px;
     display: flex;
     flex-direction: row;
 }
 #longWidth2{
-width: 896px;
+width: 60%;
 height: 483px;
 margin-top: 20px;
 margin-left: 20px;
@@ -458,34 +590,35 @@ margin-top: 30px;
 }
 
 #shortWidth2{
-    width: 560px;
+    width:35%;
 height: 483px;
 background-color: rgba(0, 0, 0, 0.219);
 backdrop-filter: blur(2px);
 margin-top: 20px;
-margin-left:20px;
+
 }
 #forSlide{
-    width:520px;
+    width:100%;
     height:443px;
-    margin-left: 20px;
     margin-top:20px;
     position: relative;
+    
 }
 #forSlide #forslider{
-    width: 500px;
+    width: 100%;
     height:300px;
-   margin-left: 10px;
-   position: relative;
-    transform: translateY(10px);
+  margin-left:15px;
+ 
+
+    
 }
 #forSlide #forslider .ForImgSlider{
-    width: 500px;
+    width:100%;
     height: 300px;
 position: absolute;
 }
  #fordescription{
-    width:500px;
+    width:100%;
     height:50px;
     transform: translateY(15px);
     margin-left: 10PX ;
@@ -575,12 +708,7 @@ transform: translate(-70px,15px);
   margin: auto;
         font-weight: bold;
 }
-#forFooter2{
-    width: 100%;
-    height: auto;
-    background: rgba(0, 0, 0, 0.219);
-    backdrop-filter: blur(2px);
-}
+
 #forcontainer3{
     width: 100%;
 background-image: url(photo_2024-04-08_21-19-18.jpg);
@@ -755,102 +883,107 @@ transform: translate(-70px,15px);
     height: auto;
     background: rgba(0, 0, 0, 0.219);
     backdrop-filter: blur(2px);}
-.footer{
-    width: 100%;
-    height: 270px;
-    background-color: rgb(0, 0, 0);
-    margin: auto;
-box-sizing: border-box;
-padding-top: 1px;
-}
-.footer .footerbox{
-    width: 1150px;
-    height: 270px;
-    background-color: rgb(255, 0, 247);
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-.footer .footerbox .sbox1{
-    width: 310px;
-    height: 270px;
-    background-color: black;
-    margin: auto;
-}
-.footer .footerbox .sbox1 #goForimg{
-     width: 200px;
-    height: 55px;
-    margin: auto;
-    margin-left: 3px;
-  border-radius: 2px;
-    background-image: url(photo_2024-03-17_21-47-06.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-}
-.footer .footerbox .sbox1 #h5a{
-    color: white;
-}
-.footer .footerbox .sbox1 #h5a span{
-    color:yellow;
-}
-.footer .footerbox .sbox1 .h5a{
-    color: white;
-    text-transform: uppercase;
-}
-.footer .footerbox .sbox1 .h5a a {
-    color: white;
-}
-.footer .footerbox .bbox1{
-    width: 530px;
-    height: 270px;
-    background-color: black;
-}
-.footer .footerbox .bbox1 .h5B{
-    color: white;
-}
-.footer .footerbox .bbox1 .h5b{
-    color: white;
-}
-.footer .footerbox .sbox2{
-    width: 310px;
-    height: 270px;
-    background-color: black;
-}
-.footer .footerbox .sbox2 .h5c{
-    color: white;
-}
-.footer .footerbox .sbox2 #forallicon{
-    width: 190px;
-    height: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: white;
-border-radius: 15px; 
-}.footer .footerbox .sbox2 #forallicon #facebook{
-    font-size: xx-large;
-    color: rgb(16, 16, 255)
-    ;margin-top: 4px;
-}
-.footer .footerbox .sbox2 #forallicon #inst{
-    font-size: xx-large;
-    color:rgb(240, 13, 225);
-    margin-top: 4px;
-}
-.footer .footerbox .sbox2 #forallicon #telegram{
-    font-size: xx-large;
-    color: rgb(106, 213, 252)
-    ;margin-top: 4px;
-}
-.footer .footerbox .sbox2 #forallicon #x{
-    font-size: xx-large;
-    color:rgb(0, 0, 0)
-    ;margin-top: 4px;
-}
-
+    .footer{
+        width: 100%;
+        height: 270px;
+        background-color: rgb(0, 0, 0);
+        margin: auto;
+      box-sizing: border-box;
+      padding-top: 1px;
+      }
+      .footer .footerbox{
+        width: 100%;
+        height: auto;
+        background-color: rgb(0, 0, 0);
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 3px;
+      }
+      .footer .footerbox .sbox1{
+        width: 30%;
+        height: auto;
+        background-color: black;
+        margin: auto;
+        padding: 10px;
+      }
+      .footer .footerbox .sbox1 .goForimg{
+         width: 50%;
+        height: 60px;
+        margin: auto;
+       display: none;
+      border-radius: 2px;
+        background-image: url(logo1.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        border-radius: 20px;
+      }
+      .footer .footerbox .sbox1 .h5a{
+        color: white;
+      }
+      .footer .footerbox .sbox1 .h5a span{
+        color:yellow;
+      }
+      .footer .footerbox .sbox1 .h5a{
+        color: white;
+        text-transform: uppercase;
+      }
+      .footer .footerbox .sbox1 .h5a a {
+        color: white;
+      }
+      .footer .footerbox .bbox1{
+        width: 40%;
+        height: auto;
+        background-color: black;
+        padding: 20px;
+      }
+      .footer .footerbox .bbox1 .h5B{
+        color: white;
+      }
+      .footer .footerbox .bbox1 .h5b{
+        color: white;
+      }
+      .footer .footerbox .sbox2{
+        width: 30%;
+        height: 270px;
+        background-color: black;
+      }
+      .footer .footerbox .sbox2 .h5c{
+        color: white;
+      }
+      .footer .footerbox .sbox2 .forallicon{
+        width: 40%;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 5px;
+      border-radius: 15px; 
+      }
+      .footer .footerbox .sbox2 .forallicon .facebook{
+        font-size: xx-large;
+        color: rgb(16, 16, 255)
+        ;margin-top: 4px;
+      }
+      .footer .footerbox .sbox2 .forallicon .inst{
+        font-size: xx-large;
+        color:rgb(240, 13, 225);
+        margin-top: 4px;
+      }
+      .footer .footerbox .sbox2 .forallicon .telegram{
+        font-size: xx-large;
+        color: rgb(106, 213, 252)
+        ;margin-top: 4px;
+      }
+      .footer .footerbox .sbox2 .forallicon .x{
+        font-size: xx-large;
+        color:rgb(0, 0, 0)
+        ;margin-top: 4px;
+        background-color: white;
+        border-radius: 30%;
+      }
 
 @media screen and (max-width: 576px) {
     #forIcon {
@@ -936,7 +1069,7 @@ left: 50%;
     display: none;
     }
     #forContainer{
-        width: 101.3%;
+        width: 100%;
     background-image: url(playboy0.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1609,120 +1742,7 @@ background-size: cover;
     background: rgba(0, 0, 0, 0.219);
     backdrop-filter: blur(2px);
 }
-.footer{
-    width: 100%;
-    height: auto;
-    background-color: rgb(0, 0, 0);
-    margin: auto;
-box-sizing: border-box;
-padding-top: 1px;
 }
-.footer .footerbox{
-    width: 100%;
-    height: auto;
-    background-color: rgb(255, 0, 247);
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-.footer .footerbox .sbox1{
-    width: 100%;
-    height: auto;
-    background-color: black;
-    margin: auto;
-}
-.footer .footerbox .sbox1 #goForimg{
-     width: 100px;
-    height: 30px;
-    margin: auto;
-  border-radius: 2px;
-    background-image: url(photo_2024-03-17_21-47-06.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-}
-.footer .footerbox .sbox1 #h5a{
-    color: white;
-    text-align: center;
-    font-size: medium;
-}
-.footer .footerbox .sbox1 #h5a span{
-    color:yellow;
-}
-.footer .footerbox .sbox1 .h5a{
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-    font-size:x-small;
-}
-.footer .footerbox .sbox1 .h5a a{
-    color: white;
-    font-size: x-small;
-}
-.footer .footerbox .bbox1{
-    width: 100%;
-    height:auto;
-    background-color: black;
-}
-.footer .footerbox .bbox1 .h5B{
-    color: white;
-    text-align: center;
-    font-size: medium;
-    
-}
-.footer .footerbox .bbox1 .h5b{
-    color: white;
-    text-align: center;
-    font-size: small;
-    padding-left: 73px;
-    padding-right:73px;
-}
-.footer .footerbox .sbox2{
-    width: 100%;
-    height: auto;
-    background-color: black;
-}
-.footer .footerbox .sbox2 .h5c{
-    color: white;
-    text-align: center;
-    font-size: medium;
-}
-.footer .footerbox .sbox2 #forallicon{
-    width: 150px;
-    height: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: white;
-    margin: auto;
-border-radius: 15px; 
-}
-.footer .footerbox .sbox2 #forallicon #facebook{
-    font-size: x-large;
-    color: rgb(16, 16, 255)
-    ;margin-top: 4px;
-}
-.footer .footerbox .sbox2 #forallicon #inst{
-    font-size: x-large;
-    color:rgb(240, 13, 225);
-    margin-top: 4px;
-}
-.footer .footerbox .sbox2 #forallicon #telegram{
-    font-size: x-large;
-    color: rgb(106, 213, 252)
-    ;margin-top: 4px;
-}
-.footer .footerbox .sbox2 #forallicon #x{
-    font-size: x-large;
-    color:rgb(0, 0, 0)
-    ;margin-top: 4px;
-}
-
-}
-   
-
 @media (min-width: 576px) and (max-width: 767.98px){ 
     #forIcon {
         width: 100%;
@@ -2026,6 +2046,5 @@ left: 50%;
         margin-right: 0px; /* Adjusted for spacing */
     }
 }
-
 
 
