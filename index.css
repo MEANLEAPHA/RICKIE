@@ -83,179 +83,200 @@ height: 550px;
 }
 
 
-#forNav{
+ #forNav{
     position: absolute;
-    width: 300px;
-    height: 500px;
-    background: rgba(0, 0, 0, 0.219);
-    backdrop-filter: blur(4px);
-    border-radius: 5px;
+    width: 100%;
+    height:550px;
+    background-color: white;
     display: flex;
-    flex-direction: column;
-    transform: translateX(-300px);
-    transition: 1s;
+  flex-wrap: wrap;
+    
+    display: none;
 }
 #forNav h3{
-    color: white;
-    text-align: center;
+    color: rgb(0, 0, 0);
+    text-align: start;
+    padding-left: 10px;
     font-style: italic;
-    text-shadow: 1px 1px 2px black;
+    font-size: medium;
+    text-shadow: 1px 1px 2px rgb(79, 72, 72);
 }
- #forNav #for-add-to-cart{
-    height: 400px;
-    width: 290px;
-overflow: scroll;
-    margin-left: 5px;
+#forNav #CCB{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+#forNav #CCB #for-add-to-cart{
+   
+    width:50% ;
+    height: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow: scroll;
  } 
  .for-add-to-cards{
-    width: 260px;
-    height: 60px;
-  margin-top:10px;
-    display: flex;
-    border:1px black solid;
-    background-color:white;
-    flex-direction: row;
-    margin: auto;
- }
+    width: 195px;
+    height: 270px;
+    background-color: rgb(224, 195, 157);
+    border-radius: 20px;
+    margin-top: 5px;
+    border: 1px black solid;
+    margin-left: 25px;
+  ;
+}
  .for-add-to-cards img{
-    width: 80px;
-    height: 60px;
- }
+    width: 100%;
+    height: 60%;
+    border-radius: 20px;
+    
+  }
+ 
  .for-add-to-cards .forText{
-    width:200px;
-    height:30px;
-    font-style:bold;
-    font-size: small;
- padding-left: 10px;
-    padding-top:10px;
+    
+    height: auto;
+    text-align: center;
+
+    padding-top: 10px;
+
+    
  }
  .for-add-to-cards .forBtnNum{
-    width: 200px;
-    height: 30px;
-    float: right;
-    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+
+   
  }
  .for-add-to-cards .forBtnNum .numforbtn{
     width: 100%;
-    height: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 10px;
- }
- .for-add-to-cards .forBtnNum .numforbtn .prevNbtn{
-    width: 20px;
-    height: 20px;
-    font-size: small;
-    text-align: center;
-    padding: 0;
-    border-radius: 50%;
-    cursor: pointer;
- }
- .for-add-to-cards .forBtnNum .numforbtn .nextNbtn{
-    width: 20px;
-    height: 20px;
-    font-size: small;
-    text-align: center;
-    padding: 0;
-    border-radius: 50%;
-    cursor: pointer;
- }
- .for-add-to-cards  .forCancel{
-float: right;
-top: 0;
-margin-top: 0;
-cursor: pointer;
- }
-
-
-
-
-
-
-
- #forNav #for-add-to-cart{
-    height: 400px;
-    width: 290px;
-overflow: scroll;
-    margin-left: 5px;
- } 
- .for-add-to-cards3{
-    width: 260px;
-    height: 60px;
-  margin-top:10px;
-    display: flex;
-    border:1px black solid;
-    background-color:white;
-    flex-direction: row;
-    margin: auto;
- }
- .for-add-to-cards3 img{
-    width: 80px;
-    height: 60px;
- }
- .for-add-to-cards3 .forText3{
-    width:200px;
-    height:30px;
-    font-style:bold;
-    font-size: small;
- padding-left: 10px;
-    padding-top:10px;
- }
- .for-add-to-cards3 .forBtnNum3{
-    width: 200px;
-    height: 30px;
-    float: right;
-    margin-top: 10px;
- }
- .for-add-to-cards3 .forBtnNum3 .numforbtn3{
-    width: 100%;
-    height: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 10px;
- }
- .for-add-to-cards3 .forBtnNum3 .numforbtn3 .prevNbtn3{
-    width: 20px;
-    height: 20px;
-    font-size: small;
-    text-align: center;
-    padding: 0;
-    border-radius: 50%;
-    cursor: pointer;
- }
- .for-add-to-cards3 .forBtnNum3 .numforbtn3 .nextNbtn3{
-    width: 20px;
-    height: 20px;
-    font-size: small;
-    text-align: center;
-    padding: 0;
-    border-radius: 50%;
-    cursor: pointer;
- }
- .for-add-to-cards3  .forCancel3{
-float: right;
-top: 0;
-margin-top: 0;
-cursor: pointer;
- }
- #forNav #forCloseAndBuy{
-    width: 290px;
-    height: 50px;
-    margin-left: 5px;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin-left: 7px;
+    margin-top: 5px;
+    
+    
+ }
+ .for-add-to-cards .forBtnNum .numforbtn .prevNbtn{
+    width: 25px;
+    height: 25px;
+    font-size: small;
+    text-align: center;
+    padding: 0;
+    border-radius: 50%;
+    cursor: pointer;
+  
+ }
+ .for-add-to-cards .forBtnNum .numforbtn .nextNbtn{
+    width: 25px;
+    height: 25px;
+    font-size: small;
+    text-align: center;
+    padding: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 0;
+margin-top: 0;
+ }
+ .for-add-to-cards .forCancel{
+    padding-top: 10px;
+text-align: center;
+color:red;
+top: 0;
+margin-top: 0;
+cursor: pointer;
+ }
+ .for-add-to-cards3{
+    width: 195px;
+    height: 270px;
+    background-color: rgb(224, 195, 157);
+    border-radius: 20px;
+    margin-top: 5px;
+    border: 1px black solid;
+    margin-left: 25px;
+  ;
+ }
+ .for-add-to-cards3 img{
+    width: 100%;
+    height: 60%;
+    border-radius: 20px;
+    
+ }
+ .for-add-to-cards3 .forText3{
+    height: auto;
+    text-align: center;
+
+    padding-top: 10px;
+ }
+ .for-add-to-cards3 .forBtnNum3{
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+ }
+ .for-add-to-cards3 .forBtnNum3 .numforbtn3{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 7px;
+    margin-top: 5px;
+ }
+ .for-add-to-cards3 .forBtnNum3 .numforbtn3 .prevNbtn3{
+    width: 25px;
+    height: 25px;
+    font-size: small;
+    text-align: center;
+    padding: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 0;
+margin-top: 0;
+ }
+ .for-add-to-cards3 .forBtnNum3 .numforbtn3 .nextNbtn3{
+    width: 25px;
+    height: 25px;
+    font-size: small;
+    text-align: center;
+    padding: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 0;
+margin-top: 0;
+ }
+ .for-add-to-cards3  .forCancel3{
+    padding-top: 10px;
+    text-align: center;
+    color:red;
+    top: 0;
+    margin-top: 0;
+    cursor: pointer;
+ }
+ #forNav #CCB #forCloseAndBuy{
+    width: 50%;
+    height: 550px;
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+
  }
 
  #forNav #forCloseAndBuy #close{
-width: 140px;
-height: 50px;
-background-color: black;
-color: white;
+    padding-left: 10px;
+font-size: x-large;
+padding-top: 10px;
+color: rgb(0, 0, 0);
 font-style: bold;
 border-radius: 10px;
+float: left;
+cursor: pointer;
+
  }
 #forNav #forCloseAndBuy #buy{
     width: 140px;
@@ -264,9 +285,94 @@ border-radius: 10px;
     font-style: bold;
 border-radius: 10px;
     }
+    #forNav #CCB #forCloseAndBuy #address{
+
+        width: 100%;
     
+        height: 100%;
+    }
+    #forNav #CCB #forCloseAndBuy #address p{
+        text-align: center;
+        font-weight: bold;
+    }
+    #forNav #forCloseAndBuy #address #shipadd{
+     margin: auto;
+width: 90%;
+height:50% ;
+border: 1px solid rgb(43, 42, 42);
+background: rgba(186, 180, 180, 0.219);
+backdrop-filter: blur(100px);
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+padding-left: 15px;
+padding-top: 15px;
+padding-bottom: 15px;
+    }
+#forNav #forCloseAndBuy #address #shipadd #username{
+        width: 90%;
+    }
+    #forNav #forCloseAndBuy #address #shipadd #gmail{
+        width: 90%;
+    }
+    #forNav #forCloseAndBuy #address #shipadd #tele{
+        width: 90%;
+    }
+    #forNav #forCloseAndBuy #address #shipadd #state{
+        width: 91%;
+    }
+    #forNav #forCloseAndBuy #address #shipadd #apartment{
+        width: 90%;
+    }
+    #forNav #forCloseAndBuy #address #shipadd #ordernote{
+        width: 90%;
+       
+    }
+  #address #orderSummery{
+width: 100%;
+height: auto;
+
+
+    }
+    #address #orderSummery #sumCost{
+        width: 100%;
+        height: auto;
+        
+        display: flex;
+        flex-direction: row;
+    }
+    #address #orderSummery #sumCost #total{
+        display: flex;
+        width: 40%;
+        height: 180px;
+      
+        display: grid;
+        padding: 5px;
+    }
+    
+    #address #orderSummery #sumCost #QRcode{
+    
+        width: 60%;
+        height: 194px;
+        display: grid;
+
+        margin: 0%;
+        padding: 0%;
+    }
+    #address #orderSummery #sumCost #QRcode p{
+        margin: 0%;
+        padding: 0%;
+    }
+    #address #orderSummery #sumCost #QRcode #forQR{
+        width: 140px;
+        height: 140px;
+ padding-bottom: 20px;
+ justify-content: center;
+ margin: auto;
+    }
+  
  #forContainer #forNavbar{
- position: absolute;
+ position: relative;
     width: 150px;
     height: auto;
     background: rgba(0, 0, 0, 0.219);
@@ -325,88 +431,11 @@ color: greenyellow;
     color: rgb(204, 166, 13);
 }
 
-
-#midCaption{
-    position: absolute;
-    width: 600px;
-   height: 300px;
-   margin: auto;
-   margin-top: 220px;
-   margin-left: 475px;
- 
-   
-}
-#forideasConcept{
-    width:600px ;
-    height: 100px;
-    text-align: center;
-  
-    }
-#forideasConcept #h2s{
-
-font-style: italic;
-font-size: x-large;
-text-shadow: 0px 0px 3px black;
-    color:white;
-    text-align: center;
-}
-#forideasConcept #h2x{
-
-    font-style: italic;
-    font-size: large;
-    text-shadow: 0px 0px 3px black;
-        color:white;
-        text-align: center;
-        margin-top: 10px;
-    }
-
-#forBtn{
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    }
-#new{
-    font-size: large;
-    color: white;
-    border-radius: 5px;
-    box-sizing: 4px;
-    cursor: pointer;
-    width: 150px;
-    height: 30px;
-    border: rgb(0, 0, 0) solid 1px;
-    background:rgba(0, 0, 0, 0.219);
-    backdrop-filter: blur(3px);
-}
-#new:hover{
-    transform: scale(1.1);
-    transition: 1.5s;
-}
-#labelmid{
-    font-size: x-large; color: white;
-}
-#trend{
-    width: 150px;
-    height: 30px;
-    font-size: large;
-    border-radius: 5px;
-    box-sizing: 4px;
-    color: rgb(0, 0, 0);
-    border: rgb(0, 0, 0) solid 1px;
-
-    margin-left: 1px;
-    cursor: pointer;
-    background:rgba(255, 255, 255, 0.619);
-    backdrop-filter: blur(2px);
-}
-#trend:hover{
-    transform: scale(1.1);
-    transition: 1.5s;
-}
 .ContainNav{
     width: 100%;
+    background-color: black;
     height: auto;
-    position: sticky;
-  top: 10px;
+    position: relative;
   
   }
   .ContainNav .NavOl{
@@ -445,6 +474,7 @@ text-shadow: 0px 0px 3px black;
   
   
   #ExContainer{
+    position: relative;
     width: 100%;
     height: auto;
     display: flex;
@@ -454,12 +484,14 @@ text-shadow: 0px 0px 3px black;
   padding: 0%;
   }
   #ExContainer .con1{
+    position: relative;
   width:100%;
   height: auto;
   background-color: rgb(0, 0, 0);
   
   }
   #ExContainer .con2{
+    position: relative;
     width:100%;
     height: auto;
     background-color: rgb(0, 0, 0);
@@ -467,12 +499,14 @@ text-shadow: 0px 0px 3px black;
   
   }
   #ExContainer .con3{
+    position: relative;
     width:100%;
   height: auto;
     background-color: rgb(0, 0, 0);
     display: none;
   }
   #ExContainer .con4{
+    position: relative;
     width:100%;
     height: auto;
   background-color: rgb(0, 0, 0);
@@ -1073,127 +1107,12 @@ left: 50%;
     background-image: url(playboy0.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-        height:240px;
-        position: relative;
-       
-    }
-    #forNav{
-        position: absolute;
-        width: 150px;
-        height: 230px;
-        background: rgba(0, 0, 0, 0.219);
-        backdrop-filter: blur(4px);
-        border-radius: 5px;
-        display: flex;
-        flex-direction: column;
-        transform: translateX(-300px);
-        transition: 1s;
-    }
-    #forNav h3{
-        color: white;
-        text-align: center;
-        font-style: italic;
-        font-size: x-small;
-        text-shadow: 1px 1px 2px black;}
- #forNav #for-add-to-cart{
-            height: 230px;
-            background-color: aquamarine;
-            width: 150px;
-       overflow: scroll;
-            margin-left: 5px;
-         } 
-         #forNav #for-add-to-cart .for-add-to-cards{
-            width: 150px;
-            height: 40px;
-          margin-top:10px;
-            display: flex;
-            border:1px black solid;
-            background-color:white;
-            flex-direction: row;
-            margin: auto;
-         }
-         .for-add-to-cards img{
-            width: 41px;
-            height: 41px;
-         }
-         .for-add-to-cards .forText{
-            width:100px;
-            height:20px;
-            background-color: blue;
-            font-style:bold;
-            font-size: xx-small;
-         margin: 0%;
-         left: 0;
-         }
-         .for-add-to-cards .forBtnNum{
-            width: 50px;
-            height: 20px;
-            float: right;
-         
-            background-color: blueviolet;
-            font-size: xx-small;
-         }
-         .for-add-to-cards .forBtnNum .numforbtn{
-            width: 50px;
-            height: 20px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            background-color: rgb(255, 127, 127);
-            top: 0;
-            
-         }
-         .for-add-to-cards .forBtnNum .numforbtn .prevNbtn{
-            width: 15px;
-            height: 15px;
-            font-size: xx-small;
-            text-align: center;
-            padding: 0;
-            border-radius: 50%;
-            cursor: pointer;
-         }
-         .for-add-to-cards .forBtnNum .numforbtn .nextNbtn{
-            width: 15px;
-            height: 15px;
-            font-size: x-small;
-            text-align: center;
-            padding: 0;
-            border-radius: 50%;
-            cursor: pointer;
-         }
-         .for-add-to-cards  .forCancel{
-        
-        top: 0;
-        margin-top: 0;
-        cursor: pointer;
-        font-size: x-small;
-         }
-     #forNav #forCloseAndBuy{
-        width: 170px;
-        height:25px;
-        margin-left: 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-     }
+        height:550px;
     
-     #forNav #forCloseAndBuy #close{
-    width: 90px;
-    height: 25px;
-    background-color: black;
-    color: white;
-    font-style: bold;
-    border-radius: 10px;
-margin-right: 5px;
-     }
-    #forNav #forCloseAndBuy #buy{
-        width: 90px;
-        height: 25px;
-        background-color: rgb(255, 255, 255);
-        font-style: bold;
-    border-radius: 10px;
-    margin-left: 4px;
-        }
+    }
+    
+ 
+   
         
     #forContainer  #forNavbar{
 
@@ -1256,79 +1175,7 @@ margin-right: 5px;
            padding-left: 4px;
            color: rgb(204, 166, 13);
        }
-    #midCaption {
-        width: 90%; /* Adjust width for smaller screens */
-        height: 60%; /* Allow height to adjust based on content */
-        margin: 20px ; /* Center the element with some margin */
-        margin-top: 20px;
-        margin-left: 20px;
-        margin-right: auto;
-    }
-
-    #forideasConcept {
-        width: 90%; /* Adjust width for smaller screens */
-        height: 50px; /* Allow height to adjust based on content */
-        text-align: center;
-       
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        margin-top: 40px;
-
-
-    }
-    #forideasConcept #h2s{
-position: relative;
-        font-size: x-small;
-        color:white;
-        text-align: center;
-        font-style: italic;
-    }
-    #forideasConcept #h2x{
-        position: relative;
-        font-size: xx-small;
-            color:white;
-            text-align: center;
-    transform: translateY(-15px);
-    font-style: italic;
-     
-        }
-        #forBtn{
-            margin: auto;
-            display: flex;
-            justify-content: center;
-            }
-            #forBtn #new{
-            font-size: x-small;
-            color: white;
-            width: 90px;
-            height: 20px;
-            cursor: pointer;
-        
-         
-        }
-        #new:hover{
-            transform: scale(1.1);
-            transition: 1.5s;
-        }
-        #forBtn #trend{ 
-            position: relative;
-            font-size: x-small;
-            border: none;
-            
-      width: 90px;
-      height: 20px;
-            margin-left: 1px;
-            cursor: pointer;
-         
-        }
-        #trend:hover{
-            transform: scale(1.1);
-            transition: 1.5s;
-        }
-        #labelmid{
-            font-size:medium;    
-        }
+    
 
 #forcontainer2{
     width: 100%;

@@ -80,11 +80,11 @@
         
         
         document.querySelector(".fa-cart-shopping").addEventListener('click',()=>{
-                document.getElementById('forNav').style.transform="translateX(0PX)"
+                document.getElementById('forNav').style.display="block"
                 document.querySelector('.fa-cart-shopping').style.color='yellow'
         });
         document.querySelector("#close").addEventListener('click',()=>{
-                document.getElementById('forNav').style.transform="translateX(-300PX)"
+                document.getElementById('forNav').style.display="none"
                 document.querySelector('.fa-cart-shopping').style.color='white'
         })
         
@@ -297,7 +297,7 @@
           button.addEventListener('click',()=>{
                 const productId=button.getAttribute('data-product-id');
                 const productName=button.getAttribute('data-product-name');
-                const productPrice=button.getAttribute('data-product-price');
+                    const productPrice = parseFloat(button.getAttribute('data-product-price'));
                 const productImage=button.getAttribute('data-product-image');
           
                 addToCart(productId,productName,productPrice,productImage);
@@ -315,7 +315,7 @@
             img.alt = name;
           var text = document.createElement('div');
           text.classList.add('forText');
-            text.textContent = `${name} PRICE:${price}$`;
+          text.innerHTML = `${name} PRICE: <span class="price">${price}</span>$`;
             var btnn=document.createElement('div');
         btnn.classList.add('forBtnNum');
             var numforbtn=document.createElement('div');
@@ -335,7 +335,7 @@
             btnn.appendChild(numforbtn);
         var x=document.createElement('h5');
         x.classList.add('forCancel');
-        x.textContent=`X`;
+        x.textContent=`Remove`;
             forAddToCarts.appendChild(img);
             forAddToCarts.appendChild(text);
             forAddToCarts.appendChild(btnn);
@@ -344,6 +344,7 @@
         nextNbtn.addEventListener('click', () => {
                 let currentCount = parseInt(numNbtn.textContent);
                 numNbtn.textContent = currentCount + 1;
+                updateTotalPrice()
             });
             function updateNotification() {
                     var forAddToCart = document.getElementById('for-add-to-cart');
@@ -363,14 +364,21 @@
                 let currentCount = parseInt(numNbtn.textContent);
                 if (currentCount > 1) {  
                     numNbtn.textContent = currentCount - 1;
+                
                 }
+                updateTotalPrice()
             });
         x.addEventListener('click', () => {
                 forAddToCart.removeChild(forAddToCarts);
                 updateNotification();
+                updateTotalPrice()
            
         })
+   
         
+        }
+     
+          
         function sendToServer(id, name, price, image) {
             fetch('/add-to-cart', {
                 method: 'POST',
@@ -392,9 +400,6 @@
                 console.error('Error:', error);
             });
         }
-        
-        }
-                
         
         
         ;
@@ -442,7 +447,7 @@
             btnn.appendChild(numforbtn);
         var x=document.createElement('h5');
         x.classList.add('forCancel');
-        x.textContent=`X`;
+        x.textContent=` Remove `;
             forAddToCarts.appendChild(img);
             forAddToCarts.appendChild(text);
             forAddToCarts.appendChild(btnn);
@@ -478,6 +483,9 @@
            
         })
         
+        
+        
+        }
         function sendToServer(id, name, price, image) {
             fetch('/add-to-cart', {
                 method: 'POST',
@@ -499,8 +507,6 @@
                 console.error('Error:', error);
             });
         }
-        
-        }
                 
         
         
@@ -510,7 +516,7 @@
           button.addEventListener('click',()=>{
                 const productId=button.getAttribute('data-product-id');
                 const productName=button.getAttribute('data-product-name');
-                const productPrice=button.getAttribute('data-product-price');
+                const productPrice = parseFloat(button.getAttribute('data-product-price'));
                 const productImage=button.getAttribute('data-product-image');
           
                 addToCart(productId,productName,productPrice,productImage);
@@ -528,7 +534,7 @@
             img.alt = name;
           var text = document.createElement('div');
           text.classList.add('forText');
-            text.textContent = `${name} PRICE:${price}$`;
+          text.innerHTML = `${name} PRICE: <span class="price">${price}</span>$`;
             var btnn=document.createElement('div');
         btnn.classList.add('forBtnNum');
             var numforbtn=document.createElement('div');
@@ -548,7 +554,7 @@
             btnn.appendChild(numforbtn);
         var x=document.createElement('h5');
         x.classList.add('forCancel');
-        x.textContent=`X`;
+        x.textContent=`Remove`;
             forAddToCarts.appendChild(img);
             forAddToCarts.appendChild(text);
             forAddToCarts.appendChild(btnn);
@@ -557,6 +563,7 @@
         nextNbtn.addEventListener('click', () => {
                 let currentCount = parseInt(numNbtn.textContent);
                 numNbtn.textContent = currentCount + 1;
+                updateTotalPrice();
             });
             function updateNotification() {
                     var forAddToCart = document.getElementById('for-add-to-cart');
@@ -570,20 +577,40 @@
         
         
             updateNotification();
-        
+            updateTotalPrice();
             
             prevNbtn.addEventListener('click', () => {
                 let currentCount = parseInt(numNbtn.textContent);
                 if (currentCount > 1) {  
                     numNbtn.textContent = currentCount - 1;
                 }
+                updateTotalPrice();
             });
         x.addEventListener('click', () => {
                 forAddToCart.removeChild(forAddToCarts);
                 updateNotification();
+        
+                updateTotalPrice();
            
         })
+
         
+        }
+        function updateTotalPrice() {
+            const cartItems = document.querySelectorAll('.for-add-to-cards');
+            let totalPrice = 0;
+        
+            cartItems.forEach(item => {
+                const price = parseFloat(item.querySelector('.price').textContent); // Get item price
+                const quantity = parseInt(item.querySelector('.numNbtn').textContent); // Get item quantity
+                totalPrice += price * quantity; // Calculate total for this item
+            });
+        
+            // Update total price display
+            document.getElementById('total-prices').textContent = totalPrice.toFixed(2); // Display total price
+        }
+                
+                
         function sendToServer(id, name, price, image) {
             fetch('/add-to-cart', {
                 method: 'POST',
@@ -605,10 +632,6 @@
                 console.error('Error:', error);
             });
         }
-        
-        }
-                
-        
         
         ;
         
@@ -815,7 +838,7 @@
             button.addEventListener('click',()=>{
                 const productId3=button.getAttribute('data-product-id');
                 const productName3=button.getAttribute('data-product-name');
-                const productPrice3=button.getAttribute('data-product-price');
+                const productPrice3 = parseFloat(button.getAttribute('data-product-price'));
                 const productImage3=button.getAttribute('data-product-image');
          addToCart3(productId3,productName3,productPrice3,productImage3);
             })
@@ -828,8 +851,8 @@
             img3.src = image3;
             img3.alt = name3;
             var text3 = document.createElement('div');
-            text3.classList.add('forText3');
-            text3.textContent = `${name3} PRICE:${price3}$`;
+            text3.classList.add('forText');
+            text3.innerHTML = `${name3} PRICE: <span class="price3">${price3}</span>$`;
             var btnn3=document.createElement('div');
         btnn3.classList.add('forBtnNum3');
             var numforbtn3=document.createElement('div');
@@ -850,7 +873,7 @@
             btnn3.appendChild(numforbtn3);
         var x3=document.createElement('h5');
         x3.classList.add('forCancel3');
-        x3.textContent=`X`;
+        x3.textContent=`Remove`;
             forAddToCarts3.appendChild(img3);
             forAddToCarts3.appendChild(text3);
             forAddToCarts3.appendChild(btnn3);
@@ -859,7 +882,7 @@
             nextNbtn3.addEventListener('click', () => {
                 let currentCount = parseInt(numNbtn3.textContent);
                 numNbtn3.textContent = currentCount + 1;
-          
+                updateTotalPrice();
             });
             function updateNotification() {
                     var  forAddToCart3 = document.getElementById('for-add-to-cart');
@@ -871,20 +894,37 @@
                     }
                 }
         
-        
+                updateTotalPrice();
             updateNotification();
             prevNbtn3.addEventListener('click', () => {
                 let currentCount = parseInt(numNbtn3.textContent);
                 if (currentCount > 1) {  
                     numNbtn3.textContent = currentCount - 1;
                 }
+                updateTotalPrice();
             });
             x3.addEventListener('click', () => {
                 forAddToCart3.removeChild(forAddToCarts3);
                 updateNotification();
+                updateTotalPrice();
         })     
         
-            function sendToServer(id3,name3,price3,image3){
+        function updateTotalPrice() {
+            const cartItems = document.querySelectorAll('.for-add-to-cards3');
+            let totalPrice = 0;
+        
+            cartItems.forEach(item => {
+                const price = parseFloat(item.querySelector('.price3').textContent); // Get item price
+                const quantity = parseInt(item.querySelector('.numNbtn3').textContent); // Get item quantity
+                totalPrice += price * quantity; // Calculate total for this item
+            });
+        
+            // Update total price display
+            document.getElementById('total-prices').textContent = totalPrice.toFixed(2); // Display total price
+        }    
+        
+        }
+        function sendToServer(id3,name3,price3,image3){
                 
             fetch('/add-to-cart',{
                 method: 'POST',
@@ -907,4 +947,43 @@
             });
         }
         
+        
+        
+//ShipCost ()=>{
+        const shipCost = document.getElementById('shipCost');
+        const stateSelect = document.getElementById('state');
+        function updateShippingCost() {
+            const selectedState = stateSelect.value;
+        
+            if (selectedState === "SR") {
+                shipCost.textContent = 3;
+            } 
+            else if(selectedState === "nothing"){
+                shipCost.textContent = ` ?`;
+            }
+            else {
+                shipCost.textContent = 5;
+            }
         }
+        stateSelect.addEventListener('change', updateShippingCost);
+        updateShippingCost();
+// }
+
+//TotalCost ()=>{
+
+    const totalCost = document.getElementById('totalCost');
+
+function updateTotalCost() {
+    const totalprices = document.getElementById('total-prices');
+    const tpVal = parseFloat(totalprices.textContent) || 0;
+    const shVal = parseFloat(shipCost.textContent) || 0;
+    const calculate = tpVal + shVal;
+
+    totalCost.textContent = ` ${calculate}`; // Display the total cost
+}
+updateTotalCost(); 
+document.getElementById('for-add-to-cart').addEventListener('change', updateTotalCost);
+stateSelect.addEventListener('change', updateTotalCost);
+
+
+    // }
