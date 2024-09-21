@@ -1,6 +1,8 @@
+const user = document.querySelector(".fa-user").addEventListener('click', ()=>{
 
-    //foranimation
- 
+    
+  window.location.href = 'UserLogin.php'
+});
     //foranimation
     function home(){
         const con2=document.querySelector(".con2");
@@ -75,7 +77,56 @@
             con3.style.display='none';
             con4.style.display='block';
             con2.style.display='none';
-            }
+            };
+
+            const slides = document.querySelectorAll(".slides img");
+            let slideIndex = 0;
+            let intervalid=null;
+            document.addEventListener("DOMContentLoaded",initializeSlider);
+
+        function initializeSlider(){
+            if(slides.length>0){
+    slides[slideIndex].classList.add("displaySlide");
+    intervalid =setInterval(nextSlide , 5000);
+        }};
+            
+            function showSlide(index){
+                if(index>=slides.length){
+                    slideIndex=0
+                }
+                else if(index<0){
+                    slideIndex=slides.length-1;
+                }
+    slides.forEach(slide =>{
+        slide.classList.remove("displaySlide");
+    });
+    slides[slideIndex].classList.add("displaySlide");
+
+            };
+            function nextSlide(){
+    slideIndex++;
+    showSlide(slideIndex);
+            };
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             //forcartanimation
         
         
@@ -92,7 +143,7 @@
           //forcartanimation
         
                 //forbaranimation
-                var bool=true;
+        /*        var bool=true;
                 $('.fa-bars').click(()=>{
                     if(bool==true){
                         $('.fa-bars').css({
@@ -108,29 +159,28 @@
                     }
                     $('#forNavbar').slideToggle()
                    
-                })
+                })*/
                 //forbaranimation
-        
-        
+      
         
         //forImgslider
         
         
-        var imgslider=[
+      /*  var imgslider=[
             {'img':'perfume-bottle-table-perfume-widely-used-ensure-pleasant-lasting-smell-is-mixture-substances-such-as-aromatic-essential-oils-alcohol-water-mls_695181-1768.avif',
              'dot':'<i class="fa-solid fa-chess-knight"></i>',
              'btnh2':'11$',
-             'btncl2':'<button class="purchase2">PURCHASE</button><button class="add2cart2" data-product-id="1" data-product-name="Rose Flower" data-product-price="10.00" data-product-image="perfume-bottle-table-perfume-widely-used-ensure-pleasant-lasting-smell-is-mixture-substances-such-as-aromatic-essential-oils-alcohol-water-mls_695181-1768.avif">ADD TO CART</button>'
+             'btncl2':'<button class="add2cart2" data-product-id="1" data-product-name="Rose Flower" data-product-price="10.00" data-product-image="perfume-bottle-table-perfume-widely-used-ensure-pleasant-lasting-smell-is-mixture-substances-such-as-aromatic-essential-oils-alcohol-water-mls_695181-1768.avif">ADD TO CART</button>'
             },
             {'img':'mockup-black-fragrance-perfume-bottle-mockup-dark-empty-background_795881-1148.jpg',
             'dot':'<i class="fa-solid fa-chess-knight"></i>',
             'btnh2':'12$',
-            'btncl2':'<button class="purchase2">PURCHASE</button><button class="add2cart2" data-product-id="2" data-product-name="SunFlower" data-product-price="12.00" data-product-image="mockup-black-fragrance-perfume-bottle-mockup-dark-empty-background_795881-1148.jpg">ADD TO CART</button>'
+            'btncl2':'<button class="add2cart2" data-product-id="2" data-product-name="SunFlower" data-product-price="12.00" data-product-image="mockup-black-fragrance-perfume-bottle-mockup-dark-empty-background_795881-1148.jpg">ADD TO CART</button>'
             },
             {'img':'best-fragrances-for-men.jpg',
             'dot':'<i class="fa-solid fa-chess-knight"></i>',
             'btnh2':'19$',
-            'btncl2':'<button class="purchase2">PURCHASE</button><button class="add2cart2" data-product-id="3" data-product-name="Non Flower" data-product-price="13.00" data-product-image="best-fragrances-for-men.jpg">ADD TO CART</button>'
+            'btncl2':'<button class="add2cart2" data-product-id="3" data-product-name="Non Flower" data-product-price="13.00" data-product-image="best-fragrances-for-men.jpg">ADD TO CART</button>'
             }
         ];
         
@@ -290,7 +340,7 @@
         
          })
          })
-        //forImgslider//
+        //forImgslider//*/
         //
         const addToCartButtons = document.querySelectorAll('.add2cart2');
         addToCartButtons.forEach(button =>{
@@ -344,7 +394,9 @@
         nextNbtn.addEventListener('click', () => {
                 let currentCount = parseInt(numNbtn.textContent);
                 numNbtn.textContent = currentCount + 1;
-                updateTotalPrice()
+                updateTotalPrice();
+                updateTotalCost();
+                updateShippingCost();
             });
             function updateNotification() {
                     var forAddToCart = document.getElementById('for-add-to-cart');
@@ -355,9 +407,10 @@
                         forNotfication.style.display = 'none';
                     }
                 }
-        
-        
-            updateNotification();
+                updateTotalPrice();
+                updateTotalCost();
+                updateShippingCost();
+                updateNotification();
         
             
             prevNbtn.addEventListener('click', () => {
@@ -366,17 +419,71 @@
                     numNbtn.textContent = currentCount - 1;
                 
                 }
-                updateTotalPrice()
+                updateTotalPrice();
+                updateTotalCost();
+                updateShippingCost();
             });
         x.addEventListener('click', () => {
                 forAddToCart.removeChild(forAddToCarts);
                 updateNotification();
-                updateTotalPrice()
+                updateTotalPrice();
+                updateTotalCost();
+                updateShippingCost();
            
         })
+       
    
         
         }
+        function updateTotalPrice() {
+            const cartItems = document.querySelectorAll('.for-add-to-cards');
+            let totalPrice = 0;
+        
+            cartItems.forEach(item => {
+                const price = parseFloat(item.querySelector('.price').textContent); // Get item price
+                const quantity = parseInt(item.querySelector('.numNbtn').textContent); // Get item quantity
+                totalPrice += price * quantity; // Calculate total for this item
+            });
+        
+            // Update total price display
+            document.getElementById('total-prices').textContent = totalPrice.toFixed(2); // Display total price
+        } 
+        const shipCost = document.getElementById('shipCost');
+        const stateSelect = document.getElementById('state');
+        
+        function updateShippingCost() {
+            const selectedState = stateSelect.value;
+        
+            if (selectedState === "SR") {
+                shipCost.textContent = 5;
+            } 
+            else if(selectedState === "nothing"){
+                shipCost.textContent = ` ?`;
+            }
+            else {
+                shipCost.textContent = 3;
+            }
+        }
+        stateSelect.addEventListener('change', updateShippingCost);
+        updateShippingCost();
+// }
+
+//TotalCost ()=>{
+
+    const totalCost = document.getElementById('totalCost');
+
+function updateTotalCost() {
+    const totalprices = document.getElementById('total-prices');
+    const tpVal = parseFloat(totalprices.textContent) || 0;
+    const shVal = parseFloat(shipCost.textContent) || 0;
+    const calculate = tpVal + shVal;
+
+    totalCost.textContent = ` ${calculate}`; // Display the total cost
+}
+updateTotalCost(); 
+document.getElementById('for-add-to-cart').addEventListener('change', updateTotalCost);
+stateSelect.addEventListener('change', updateTotalCost);
+        
      
           
         function sendToServer(id, name, price, image) {
@@ -404,7 +511,7 @@
         
         ;
         //
-        const addToCartButtons1 = document.querySelectorAll('.add2cart1');
+       /* const addToCartButtons1 = document.querySelectorAll('.add2cart1');
         addToCartButtons1.forEach(button =>{
           button.addEventListener('click',()=>{
                 const productId=button.getAttribute('data-product-id');
@@ -427,7 +534,7 @@
             img.alt = name;
           var text = document.createElement('div');
           text.classList.add('forText');
-            text.textContent = `${name} PRICE:${price}$`;
+          text.innerHTML = `${name} PRICE: <span class="price">$${price}</span>`;
             var btnn=document.createElement('div');
         btnn.classList.add('forBtnNum');
             var numforbtn=document.createElement('div');
@@ -653,7 +760,7 @@
         
         
         //forImgslider3
-        var imgslider3=[
+        /*var imgslider3=[
             {'img':'images (1).jpg',
               'dot3':'<i class="fa-solid fa-chess-bishop"></i>',
               'btnh3':'8$',
@@ -830,10 +937,10 @@
         //rd
         })
         //rd
-        
+        */
         
         //forImgslider3
-        const clickButtons3=document.querySelectorAll('.add2cart3');
+        /*  const clickButtons3=document.querySelectorAll('.add2cart3');
         clickButtons3.forEach(button =>{
             button.addEventListener('click',()=>{
                 const productId3=button.getAttribute('data-product-id');
@@ -946,44 +1053,12 @@
                 console.error('Error:', error);
             });
         }
-        
+        */
         
         
 //ShipCost ()=>{
-        const shipCost = document.getElementById('shipCost');
-        const stateSelect = document.getElementById('state');
-        function updateShippingCost() {
-            const selectedState = stateSelect.value;
-        
-            if (selectedState === "SR") {
-                shipCost.textContent = 3;
-            } 
-            else if(selectedState === "nothing"){
-                shipCost.textContent = ` ?`;
-            }
-            else {
-                shipCost.textContent = 5;
-            }
-        }
-        stateSelect.addEventListener('change', updateShippingCost);
-        updateShippingCost();
-// }
+       
 
-//TotalCost ()=>{
-
-    const totalCost = document.getElementById('totalCost');
-
-function updateTotalCost() {
-    const totalprices = document.getElementById('total-prices');
-    const tpVal = parseFloat(totalprices.textContent) || 0;
-    const shVal = parseFloat(shipCost.textContent) || 0;
-    const calculate = tpVal + shVal;
-
-    totalCost.textContent = ` ${calculate}`; // Display the total cost
-}
-updateTotalCost(); 
-document.getElementById('for-add-to-cart').addEventListener('change', updateTotalCost);
-stateSelect.addEventListener('change', updateTotalCost);
 
 
     // }

@@ -35,14 +35,7 @@ body{
       
                     
   }
-  .forIcon .forCaption .p2{
-  font-size: small;
-  text-align: center;
-  color: white;
   
-  font-style: oblique;
-  
-  }
   .forIcon .fa-cart-shopping {
     color: white;
     position: relative;
@@ -52,7 +45,7 @@ body{
     cursor: pointer;
   
   }
-  .forIcon .fa-bars{
+  .forIcon .fa-user{
     color: rgb(255, 255, 255);
    font-size: x-large;
    position: relative;
@@ -71,26 +64,21 @@ body{
   display: none;
   }
   
-#forContainer{
-    width: 100%;
-background-image: url(playboy0.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-margin: 0;
-padding: 0%;
-height: 550px;
-}
+
+
+
+
+
+  
 
 
  #forNav{
-    position: absolute;
+    position: relative;
     width: 100%;
     height:550px;
     background-color: white;
     display: flex;
-  flex-wrap: wrap;
-    
+  flex-wrap: wrap;  
     display: none;
 }
 #forNav h3{
@@ -119,8 +107,8 @@ height: 550px;
         overflow: scroll;
  } 
  .for-add-to-cards{
-    width: 195px;
-    height: 270px;
+    width: 175px;
+    height: 250px;
     background-color: rgb(224, 195, 157);
     border-radius: 20px;
     margin-top: 5px;
@@ -130,7 +118,7 @@ height: 550px;
 }
  .for-add-to-cards img{
     width: 100%;
-    height: 60%;
+    height: 55%;
     border-radius: 20px;
     
   }
@@ -140,9 +128,12 @@ height: 550px;
     height: auto;
     text-align: center;
 
-    padding-top: 10px;
+    padding-top: px;
 
     
+ }
+ .for-add-to-cards .price{
+    color: #ea5104;
  }
  .for-add-to-cards .forBtnNum{
     width: 100%;
@@ -191,72 +182,8 @@ top: 0;
 margin-top: 0;
 cursor: pointer;
  }
- .for-add-to-cards3{
-    width: 195px;
-    height: 270px;
-    background-color: rgb(224, 195, 157);
-    border-radius: 20px;
-    margin-top: 5px;
-    border: 1px black solid;
-    margin-left: 25px;
-  ;
- }
- .for-add-to-cards3 img{
-    width: 100%;
-    height: 60%;
-    border-radius: 20px;
-    
- }
- .for-add-to-cards3 .forText3{
-    height: auto;
-    text-align: center;
 
-    padding-top: 10px;
- }
- .for-add-to-cards3 .forBtnNum3{
-    width: 100%;
-    height: auto;
-    padding-top: 10px;
- }
- .for-add-to-cards3 .forBtnNum3 .numforbtn3{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-left: 7px;
-    margin-top: 5px;
- }
- .for-add-to-cards3 .forBtnNum3 .numforbtn3 .prevNbtn3{
-    width: 25px;
-    height: 25px;
-    font-size: small;
-    text-align: center;
-    padding: 0;
-    border-radius: 50%;
-    cursor: pointer;
-    top: 0;
-margin-top: 0;
- }
- .for-add-to-cards3 .forBtnNum3 .numforbtn3 .nextNbtn3{
-    width: 25px;
-    height: 25px;
-    font-size: small;
-    text-align: center;
-    padding: 0;
-    border-radius: 50%;
-    cursor: pointer;
-    top: 0;
-margin-top: 0;
- }
- .for-add-to-cards3  .forCancel3{
-    padding-top: 10px;
-    text-align: center;
-    color:red;
-    top: 0;
-    margin-top: 0;
-    cursor: pointer;
- }
+
  #forNav #CCB #forCloseAndBuy{
     width: 50%;
     height: 550px;
@@ -288,7 +215,7 @@ border-radius: 10px;
     #forNav #CCB #forCloseAndBuy #address{
 
         width: 100%;
-    
+    position: absolute;
         height: 100%;
     }
     #forNav #CCB #forCloseAndBuy #address p{
@@ -470,11 +397,30 @@ color: greenyellow;
    
   }
   
-  
+  .slider{
+    width: 100%;
+    height: 550px;
+    position: relative;
+    overflow: hidden;
+}
+.slider img{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+img.displaySlide{
+display: block;
+}
+.next {
+    display: none;
+}
+.prev {
+    display: none;
+}
   
   
   #ExContainer{
-    position: relative;
+   
     width: 100%;
     height: auto;
     display: flex;
@@ -523,8 +469,8 @@ color: greenyellow;
         
     }
      #fbox .ffbox{
-    width: 195px;
-    height: 270px;
+    width: 175px;
+    height: 250px;
     background-color: rgb(224, 195, 157);
     border-radius: 20px;
     margin-top: 5px;
@@ -600,62 +546,57 @@ background-size: cover;
         position: absolute;
         font-style: italic;
 }
-#forMain2{
+#ExContainer .con2 #forMain2{
     width: 100%;
-    height: 523px;
-    display: flex;
-    flex-direction: row;
+    height: 100%;
+   ;
 }
 #longWidth2{
-width: 60%;
-height: 483px;
-margin-top: 20px;
-margin-left: 20px;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
+width: 100%;
+height:100%;
 
+
+position: relative;
 }
 #longWidth2 #forinfo{
-    width: 840px;
-height: 300px;
-margin-left: 35px;
-margin-top: 30px;
+    width: 100%;
+height: 100%;
+overflow: scroll;
+position: relative;
 }
 
-#shortWidth2{
-    width:35%;
-height: 483px;
-background-color: rgba(0, 0, 0, 0.219);
-backdrop-filter: blur(2px);
-margin-top: 20px;
 
-}
 #forSlide{
-    width:100%;
-    height:443px;
-    margin-top:20px;
+    float: right;
+    width:50%;
+    height:auto;
+ margin-top: 15px;
     position: relative;
+    background-color: aqua;
     
 }
 #forSlide #forslider{
-    width: 100%;
-    height:300px;
-  margin-left:15px;
+    width: 95%;
+    height:250px;
+    background-color: #ea5104;
+  margin: auto;
  
 
     
 }
 #forSlide #forslider .ForImgSlider{
     width:100%;
-    height: 300px;
-position: absolute;
+    height: 100%;
+    margin: auto;
+
 }
  #fordescription{
-    width:100%;
-    height:50px;
-    transform: translateY(15px);
-    margin-left: 10PX ;
+    width:95%;
+    height:45px;
+
+margin: auto;
+    
+    background-color: #ea5104;
     display: flex;
     flex-direction: row;
 }
@@ -667,7 +608,7 @@ position: absolute;
     color: white;background:rgba(68, 66, 66, 0.219);
     backdrop-filter: blur(2px);
     text-align: center;cursor: pointer;
-    transform: translate(70px,15px);
+    transform: translate(20px,13px);
 }
 #fordescription #longbutt{
     width: 300px;
@@ -692,27 +633,26 @@ position: absolute;
     backdrop-filter: blur(2px);
     text-align: center;
     cursor: pointer;
-transform: translate(-70px,15px);
+transform: translate(-20px,13px);
 }
 #forfavbtn{
-    width:500px ;
-    height: 65px;
+    width:95%;
+    height: 50px;
     background-color:lightgray;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 5px;
  display: flex;
  flex-direction: row;
  border-radius: 20px;
 }
 #for2btn2{
-    width: 220px;
+    width: 50%;
     height:45px ;
     margin: auto;
-    display: flex;
-    flex-direction: row;
+    
 }
 #forfavbtn #forh2{
-    width: 150px;
+    width: 50%;
     height: 35px;
     margin: auto;
     text-align: center;
@@ -722,16 +662,7 @@ transform: translate(-70px,15px);
     text-shadow: 1px 2px 2px black;
     transform: translate(0px,-10px);
 }
- .purchase2{
-    width:100px ;
-    height: 35px;
-    background-color: black;
-    color: white;
-    padding: 0;
-    text-align: center;
-    margin: auto;
-    font-weight: bold;
-}
+
  .add2cart2{
     width:100px ;
     height: 35px;
@@ -740,6 +671,8 @@ transform: translate(-70px,15px);
     padding: 0;
     text-align: center;
   margin: auto;
+  border-radius: 20px;
+  margin-top: 5px;
         font-weight: bold;
 }
 
@@ -1102,14 +1035,7 @@ left: 50%;
     transform: translate(15px,-22px);
     display: none;
     }
-    #forContainer{
-        width: 100%;
-    background-image: url(playboy0.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-        height:550px;
-    
-    }
+   
     
  
    
@@ -1213,376 +1139,9 @@ background-size: cover;
                 font-style: italic;
                 font-size: x-small;
         }
-        #forMain2{
-            width: 100%;
-            height: 350px;
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-           
-        }
-        #longWidth2{
-            width: 40%;
-            height: 340px;
-            margin-top: 5px;
-            margin-left: 5px;
-            
-        
-            
-            }
-            #longWidth2 #forinfo{
-                width:100%;
-            height: 340px;
-        margin: auto;
-        
-            font-size:medium;
-            overflow: scroll;
-            }
-            
-            #shortWidth2{
-                width: 60%;
-            height: 300px;
-            margin: auto;
-            margin-top: 30px;
-           
-           position: relative;
-            }
-            #forSlide{
-                width:90%;
-                height:300px;
-            margin: auto;
-            margin-left: 5px;
-                position: relative;
-            }
-            #forSlide #forslider{
-                width: 100%;
-                height:300px;
-               position: relative;
-                
-            }
-            #forSlide #forslider .ForImgSlider{
-                width: 100%;
-                height: 60%;
-            position: absolute;
-            }
-            #fordescription{
-                width:100%;
-                height:35px;
-                position: relative;
-                margin-left: 10px;
-                transform: translate(0px,-110px);
-                display: flex;
-                flex-direction: row;
-                
-            }
-            #fordescription #prevbtn{
-                width: 22px;
-                height: 22px;
-                border-radius: 50%;
-                border: 2px rgb(255, 255, 255) solid;
-                color: white;
-                background:rgba(68, 66, 66, 0.219);
-                backdrop-filter: blur(2px);
-                text-align: center;
-                font-size: small;
-                padding: 0;
-                cursor: pointer;
-                transform: translate(0px);
-                margin-top: 10px;
-                margin-left: 15px;
-            }
-            #fordescription #longbutt{
-                width: 200px;
-                height: 25px;
-                margin: auto;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-            }
-            #fordescription #longbutt .fa-chess-knight{
-                height: 15px;
-                font-size: 13px;
-              color:white;
-              border: black;
-              padding: 0;
-            }
-            #fordescription #nextbtn{
-                width: 22px;
-                height: 22px;
-                border-radius: 50%;
-                border: 2px rgb(255, 255, 255) solid;
-                color: white;
-                background:rgba(68, 66, 66, 0.219);
-                backdrop-filter: blur(2px);
-                text-align: center;
-                cursor: pointer;
-            transform: translate(0px);
-            margin-top: 10px;
-            margin-right: 15px;
+   
 
-    }
-    #forfavbtn{
-        width:100%;
-        height: 40px;
-        background-color:lightgray;
-        margin: auto;
-        transform: translate(10px,-100px);
-     display: flex;
-     flex-direction: row;
-     border-radius: 10px;
-    }
-  
-    #forfavbtn #forh2{
-        width: 35%;
-        height: 35px;
-        margin: auto;
-        padding-top: 5px;
-        text-align: center;
-        font-size: small;
-    }
-    #forh2 .onlyinh2{
-        color:rgb(255, 255, 255);
-        text-shadow: 1px 2px 2px black;
-        transform: translate(0px,-10px);
-    }
-    #for2btn2{
-        width: 65%;
-        height:40px ;
         
-        margin: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-     .purchase2{
-        width:45% ;
-        height: 30px;
-        background-color: black;
-        color: white;
-        padding: 0;
-        text-align: center;
-        margin: auto;
-        font-size: x-small;
-        font-weight: bold;
-    }
-     .add2cart2{
-        width:45% ;
-        height: 30px;
-        background-color: rgb(255, 255, 255);
-        color: rgb(0, 0, 0);
-        padding: 0;
-        text-align: center;
-      margin: auto;
-            font-weight: bold;
-            font-size: x-small;
-
-
-}
-#forFooter2{
-    width:100%;
-    height: 50px;
-    background: rgba(0, 0, 0, 0.219);
-    backdrop-filter: blur(2px);
-}
-#forcontainer3{
-    width: 100%;
-background-image: url(photo_2024-04-08_21-19-18.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-        height: 400px;
-        position: relative;   
-        }
-        #forHeader3{
-            width:100%;
-            height: 30px;
-  
-            margin: 0%;
-            padding: 0%;
-            position: relative;
-        }
-        #forHeader3 .fa-chess-queen{
-            color: white;
-           float: left;
-           margin-bottom: 2px;
-            margin-left: 2px;
-            font-style: italic;
-            font-size: x-small;
-         
-        }
-        #forHeader3 h3{
-            color: white;
-  
-     padding: 0%;
-                float: left;
-                margin-top: 20px;
-                font-style: italic;
-                font-size: x-small;
-        }
-        #forMain3{
-            width: 100%;
-            height: 350px;
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-           
-        }
-        #longWidth3{
-            width: 40%;
-            height: 340px;
-            margin-top: 5px;
-            margin-left: 5px;
-            
-        
-            
-            }
-            #longWidth3 #forinfo3{
-                width:100%;
-            height: 340px;
-        margin: auto;
-        
-            font-size:medium;
-            overflow: scroll;
-            }
-            
-             #shortWidth3{
-                width: 60%;
-            height: 300px;
-            margin: auto;
-            margin-top: 30px;
-        
-           
-           position: relative;
-            }
-            #forSlide3{
-                width:90%;
-                height:300px;
-            margin: auto;
-            margin-left: 5px;
-                position: relative;
-            }
-            #forSlide3 #forslider3{
-                width: 100%;
-                height:300px;
-               position: relative;
-                
-            }
-            #forSlide3 #forslider3 .ForImgSlider3{
-                width: 100%;
-                height: 60%;
-            position: absolute;
-            }
-            #fordescription3{
-                width:100%;
-                height:35px;
-                position: relative;
-                margin-left: 10px;
-                transform: translate(0px,-110px);
-                display: flex;
-                flex-direction: row;
-                
-            }
-            #fordescription3 #prevbtn3{
-                width: 22px;
-                height: 22px;
-                border-radius: 50%;
-                border: 2px rgb(255, 255, 255) solid;
-                color: white;
-                background:rgba(68, 66, 66, 0.219);
-                backdrop-filter: blur(2px);
-                text-align: center;
-                font-size: small;
-                padding: 0;
-                cursor: pointer;
-                transform: translate(0px);
-                margin-top: 10px;
-                margin-left: 15px;
-            }
-            #fordescription3 #longbutt3{
-                width: 200px;
-                height: 25px;
-                margin: auto;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-            }
-            #fordescription3 #longbutt3 .fa-chess-bishop{
-                height: 15px;
-                font-size: 13px;
-              color:white;
-              border: black;
-              padding: 0;
-            }
-            #fordescription3 #nextbtn3{
-                width: 22px;
-                height: 22px;
-                border-radius: 50%;
-                border: 2px rgb(255, 255, 255) solid;
-                color: white;
-                background:rgba(68, 66, 66, 0.219);
-                backdrop-filter: blur(2px);
-                text-align: center;
-                cursor: pointer;
-            transform: translate(0px);
-            margin-top: 10px;
-            margin-right: 15px;
-
-    }
-    #forfavbtn3{
-        width:100%;
-        height: 40px;
-        background-color:lightgray;
-        margin: auto;
-        transform: translate(10px,-100px);
-     display: flex;
-     flex-direction: row;
-     border-radius: 10px;
-    }
-  
-    #forfavbtn3 #forh3{
-        width: 35%;
-        height: 35px;
-        margin: auto;
-        padding-top: 5px;
-        text-align: center;
-        font-size: small;
-    }
-    #forh3 .onlyinh3{
-        color:rgb(255, 255, 255);
-        text-shadow: 1px 2px 2px black;
-        transform: translate(0px,-10px);
-    }
-    #forfavbtn3  #for2btn3{
-        width: 65%;
-        height:40px ;
-        margin: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    #forfavbtn3  #for2btn3   .purchase3{
-        width:45% ;
-        height: 30px;
-        background-color: black;
-        color: white;
-        padding: 0;
-        text-align: center;
-        margin: auto;
-        font-size: x-small;
-        font-weight: bold;
-    }
-    #forfavbtn3  #for2btn3   .add2cart3{
-        width:45% ;
-        height: 30px;
-        background-color: rgb(255, 255, 255);
-        color: rgb(0, 0, 0);
-        padding: 0;
-        text-align: center;
-      margin: auto;
-            font-weight: bold;
-            font-size: x-small;
-
-
-}
 #forFooter3{
     width:100%;
     height: 50px;
